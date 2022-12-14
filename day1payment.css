@@ -1,0 +1,174 @@
+body{
+    background-color:whitesmoke;
+}
+#main-cart-div{
+    
+    
+    display: flex;
+    
+    justify-content: space-evenly;
+    
+    width:70%;
+    margin:auto;
+
+    padding-top: 40px;
+}
+
+
+#main-cart-div>div:nth-child(1){
+    width:60%;
+    padding-right: 6px;
+    
+
+}
+
+#main-cart-div>div:nth-child(2){
+    width:33%;
+    
+    
+}
+#product-cart-heading-div{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+    background-color: white;
+    
+}
+#product-cart-heading-div>div{
+    
+}
+
+.cart-heading1{
+    grid-area: 1/1/2/4;
+    padding-left: 8px;
+    border-bottom:1px solid gray;
+}
+.cart-heading2{
+    
+    text-align: center;
+    padding-top:15px;
+    border-bottom:1px solid gray;
+
+}
+
+.cart-heading3{
+    grid-area: 2/1/3/3;
+    padding:5px 0;
+    padding-left: 8px;
+    border-bottom:1px solid gray;
+}
+
+.cart-heading4{
+    padding:5px 0;
+   text-align: center;
+   border-bottom:1px solid gray;
+}
+.cart-heading5{
+    
+    text-align: center;
+    padding:5px 0;
+    border-bottom:1px solid gray;
+}
+
+a[id ="signin-link"]{
+    text-decoration: none;
+}
+
+#product-cart-detail{
+  
+}
+#later-heading-div{
+    margin-top:250px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+}
+#later-heading-div>div{
+    
+}
+.saved-heading1{
+    grid-area: 1/1/2/5;
+    padding:5px 0;
+    padding-left: 8px;
+    background-color: white;
+    border-bottom:1px solid gray;
+}
+.saved-heading2{
+    grid-area:2/1/3/4;
+    padding:5px 0;
+    padding-left: 8px;
+    border-bottom:1px solid gray;
+}
+.saved-heading3{
+    padding:5px 0;
+    padding-left: 50%;
+    
+    border-bottom:1px solid gray;
+}
+
+#price-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+
+}
+
+.price-heading1{
+    grid-area:1/1/2/3;
+    font-weight:bold;
+    padding:5px 0px;
+
+}
+
+.price-heading2{
+    font-weight: bold;
+    padding-left: 40%;
+}
+.price-heading3{
+    grid-area: 2/1/3/3;
+    font-weight: bold;
+    padding:5px 0px;
+
+}
+
+.price-heading4{
+    font-weight: bold;
+    padding-left: 40%;
+}
+.price-heading4 p{
+    color:gray;
+}
+
+#checkout-btn{
+    width:100%;
+    background-color: black;
+    color:white;
+    height:50px;
+    font-size: 20px;
+}
+
+.gray-text{
+    color:gray;
+}
+
+#checkout-btn+div{
+    border-bottom: 1px solid gray;
+}
+
+button~div~div{
+width:100%;
+}
+input[id="promocode"]{
+    width:70%;
+    height: 30px;
+}
+
+input[id="promocode"]~button{
+    padding:8px;
+}
+
+#promo-heading{
+    margin:8px 0px;
+    font-size: 18px;
+    font-weight: bold;
+}

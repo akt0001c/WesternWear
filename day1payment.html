@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="day1payment.css">
+</head>
+<body>
+  <div id="main-cart-div">
+        <div>
+            <div>
+                <div id="product-cart-heading-div">
+                    <div class="cart-heading1"><h3>SHOPPING BAG (<span id="product-count"> 0</span> )</h3></div>
+                    <div class="cart-heading2"><span>Have an account </span><a href="" id="signin-link">Sign in</a></div>
+                    <div class="cart-heading3">ITEM</div>
+                    <div class="cart-heading4">QTY</div>
+                    <div class="cart-heading5">PRICE</div>
+                
+                </div>
+                <div id="product-cart-detail"></div>
+            </div>
+            <div id="cart-later-div">
+                    <div id="later-heading-div">
+                        <div class="saved-heading1"><h3>SAVED FOR LATER (<span id="saved-product-count"> 0 </span>)</h3></div>
+                        <div class="saved-heading2">ITEM</div>
+                        <div class="saved-heading3">PRICE</div>
+                    </div>
+                    <div id="saved-product-box">
+
+                    </div>
+            </div>
+        </div>
+        <div>
+            <div id="price-box">
+                <div class="price-heading1">Item Subtotal</div>
+                <div class="price-heading2">INR <span id="item-total-price">3433</span></div>
+                <div class="price-heading3">Estimated Total
+                     <p class="gray-text">Shipping calulated in checkout</p>  
+                </div>
+                <div class="price-heading4">INR <span id="estimated-price">5433</span></div>
+            </div>
+            <button id="checkout-btn">CHECKOUT</button>
+            <div>
+                <h4>Checkout with ESW</h4>
+                <p class="gray-text">By clicking 'check out Now',you will be redirected to<br>the ESW checkout page where payment will be taken<br>and your order fulfilled by ESW,J.Crew preferred<br>partner for international sales. </p>
+            </div>
+
+            <div>
+                <p id="promo-heading">Add a promo</p>
+                <input type="text" id="promocode" placeholder="Promo"><button id="apply_btn" disabled>Apply</button>
+            </div>
+
+        </div>
+  </div>
+</body>
+</html>
