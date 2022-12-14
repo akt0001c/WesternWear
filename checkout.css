@@ -1,0 +1,125 @@
+#c-nav{
+    width: 100%;
+    border: 1px solid brown;
+    height: 50px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+#crew-nav{
+    width: 100%;
+    border: 1px solid grey;
+    height: 60px;
+
+}
+#crew-nav>img{
+display: block;
+margin: auto;
+width: 140px;
+height: 90%;
+
+
+}
+#checkout{
+
+    width: 80%;
+    margin: auto;
+    height: 800px;
+    display: flex;
+    /* border: 1px solid; */
+    margin-top: 20px;
+}
+#checkout>div{
+height: 700px;
+width: 50%;
+/* margin: auto; */
+margin-right: 10px;
+
+}
+#f-box{
+    display: flex;
+    flex-direction: column;
+}
+#method{
+    height: auto;
+    width: 100%;
+    border: 1px solid grey;
+   padding-left: 20px;
+   font-weight: bold;
+}
+#method>div{
+    width: 95%;
+    height: 50px;
+    margin-bottom: 20px;
+
+    display: flex;
+    font-weight: bold;
+}
+.last{
+    margin-left: 150px;
+}
+#method>div+p{
+font-size: 13px;
+}
+#address{
+    height: auto;
+    width: 100%;
+    border: 1px solid grey;padding-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    
+
+}
+input{
+    height: 30px;
+    margin-bottom: 10px;
+    
+}
+#address>div{
+    display: flex;
+    gap: 50px;
+
+}
+
+select{
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#ad1,#ad2{
+    width: 90%;
+}
+
+#payment-btn{
+    width: 80%;
+    height: 40px;
+    background-color:rgb(24, 111, 191);
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    border: none;
+    cursor: 
+    pointer;
+    margin-bottom: 20px;
+}
+#c-f{
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  
+    margin-top: 100px;
+}
+#s-box{
+    border: 1px solid;
+    height: 100 px;
+    width: 20%;
+}
+#number,#email{
+    width: 90%;
+}

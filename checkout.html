@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+    <div id="c-nav">
+        <p>TODAY ONLY: FREE SHIPPING! Shop our SALE styles: 70% off 3+ · 60% off 2 · 50% off 1. And 50% off almost everything else. Use code <br> SHOPTIME.</h2>
+    </div>
+<p style="margin-bottom:-30px ;padding-left:5px;color:grey">Return to shoping bag</p>
+    <div id="crew-nav">
+
+
+        <img src="https://brandslogos.com/wp-content/uploads/images/j-crew-logo-vector.svg" alt="">
+    </div>
+    
+
+
+    <div id="checkout">
+
+        <div id="f-box">
+
+ <div id="method">
+    <h4>Delivery Method</h4>
+
+    <div>
+        <input style="height: 40px;" type="checkbox"> <p>STANDARD delivery</p> <p class="last">INR 1,710.00</p>
+        
+    </div>
+    <p style="margin-top:-20px ;">delivered on or before 5 january</p> 
+    <div>
+        <input  style="height: 40px;" type="checkbox"> <p>EXPRESS delivery</p> <p class="last">INR 2,052.00</p>
+    </div>
+    <p style="margin-top:-20px ;">delivered on or before 28 december</p>
+
+ </div>
+
+<div id="address">
+    <h3>Delivery address</h3>
+    <div><input type="text" name="" id="name" placeholder="First Name"> <input type="text" id=""placeholder="Last Name">
+    </div>
+ <select name="" id="country" >
+    <option value="">country</option>
+    <option value="">India</option>
+ </select>
+ <input type="text" placeholder="Adress line 1 *" id="ad1">
+ <input type="text" placeholder="Adress line 2 *" id="ad2">
+
+ <div><input type="text" name="" id="zip" placeholder="*Postal Code"> <input type="text" id="city"placeholder="*City">
+
+</div>
+<div>
+    <input style="margin-top: 10px;" type="checkbox" name="" id=""> <p>Save this address for my next purchase.</p>
+
+
+    </div>
+    <input type="number" name="" id="number" placeholder="+91 *************">
+    <input type="email" name="" id="email" placeholder="Enter your Email">
+
+
+    <div>
+        <input style="margin-top: 10px;" type="checkbox" name="" id=""> <p>I have read and consent to ESW processing my information in accordance with the Privacy Statement and Cookie Policy.</p>
+    
+    
+        </div>
+        <button id="payment-btn" onclick="payment()">CONTINUE TO PAYMENT</button>
+<script>
+    function payment(){
+        window.location.href="payment.html"
+    }
+</script>
+    
+  
+    </div>
+
+
+    <div id="c-f" >
+        <p>Powered by ESW</p>
+        <p>Terms & Conditions</p>
+        <p>Privacy Statement</p>
+    </div>
+</body>
+</html>
