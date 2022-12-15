@@ -1,0 +1,63 @@
+#c-nav{
+    width: 100%;
+    border: 1px solid brown;
+    height: 50px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+#crew-nav{
+    width: 100%;
+    border: 1px solid grey;
+    height: 60px;
+
+}
+#crew-nav>img{
+display: block;
+margin: auto;
+width: 140px;
+height: 90%;
+
+
+}
+#payment{
+    height: auto;
+    width: 50%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    margin-top:20px ;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+input{
+    height: 30px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 50%;
+    display: block;
+    
+}
+button{
+    width: 180px;
+    background-color: rgb(9, 101, 137);
+    color: white;
+    border-radius:10px ;
+    display: block;
+    margin: auto;
+    height: 40px;
+    border: 1px solid rgb(11, 112, 152);
+    cursor: pointer;
+   
+}
+#container{
+    display: flex;
+   justify-content: space-evenly;
+}
+#container>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    height: auto;
+    width: 30%;
+    height: auto;
+    padding-left: 20px;
+}
