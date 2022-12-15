@@ -12,6 +12,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgb(217, 212, 212);
+ 
 }
 #hmb {
   cursor: pointer;
@@ -20,9 +21,10 @@
 }
 #mnp {
   width: 100%;
-  height: 70px;
+  height: 68px;
   margin: auto;
-  border: 1px solid red;
+  border: 1px dotted orangered;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 #mnp a,
 h1 {
@@ -39,8 +41,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
-  width: 50%;
+  border: 0px solid black;
+  width: 60%;
   height: 70px;
 }
 #snp {
@@ -51,7 +53,7 @@ h1 {
 }
 #mnp > div:nth-child(2) > div:nth-child(2) {
   width: 30%;
-  border: 1px solid black;
+  border: 0px solid black;
   display: flex;
   align-items: center;
 }
@@ -180,7 +182,7 @@ h1 {
   padding: 10px;
   font-size: 17px;
   font-family: 'Times New Roman', Times, serif;
-  border: 1px solid rgb(250, 7, 7);
+  border: 1px solid navy;
   float: left;
   width: 60%;
   /* background: #f1f1f1; */
@@ -213,4 +215,28 @@ h1 {
 }
 #h1 {
   margin-bottom: 60px;
+}
+#lc{
+  display: flex;
+  gap: 50px;
+}
+#lc>img{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+#lc>img:hover{
+  cursor: pointer;
+  border:dotted #0b7dda;
+  padding: -5px;
+  border-radius:5px;
+}
+.row>div>img{
+  height: 200px;
+}
+.row>div>img:hover{
+  cursor: pointer;
+  height: 210px;
+  border: 1px dotted navy;
+}
+#fns div a{
+  font-size: smaller;
 }
