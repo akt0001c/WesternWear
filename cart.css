@@ -1,0 +1,23 @@
+.card{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: 200px;
+
+    padding:5px;
+    background-color: white;
+    gap:10px;
+    align-items: center;
+
+}
+.card>div:nth-child(1){
+   width:100%;
+   height: 100%;
+}
+.card>div:nth-child(2){
+    grid-area: 1/2/2/4;
+}
+
+.cart-image{
+    width:100%;
+    height:98%;
+}
