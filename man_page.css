@@ -48,6 +48,7 @@ body{
     top: 140px;
     left: 24%;
 }
+
 /*
 #poster_dropdown > select{
     padding: 10px 40px 10px 40px;
@@ -62,6 +63,10 @@ body{
 } */
 
 /* DROPDOWN CSS- Dropdown Button */
+
+#body_div_after-poster{
+    /* border: 1px solid gold; */
+}
 
 .dropbtn {
     background-color: white;
@@ -93,8 +98,6 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(82, 80, 80, 0.2);
     z-index: 1;
     margin-top: -30px;
-
-   
   }
   
   /* Links inside the dropdown */
@@ -172,12 +175,15 @@ body{
     height: auto;
 }
 .filter_btns > span{
-    /* border: 1px solid blue; */
     border: 1px solid black;
     padding: 12px 30px;
     margin-right: 20px;
     margin-left: 20px;
     font-family: sans-serif;
+}
+.filter_btns > span:hover{
+    cursor: pointer;
+    border: 2px solid black;
 }
 #dark_dropdopwn_filterbtn1{
     margin-left: 30px;
@@ -190,14 +196,19 @@ body{
   margin-top: 20px;
   margin-left: 20px;
   height: auto;
+  display: none;
   padding-bottom: 20px;
 }
+
 #category_section > #category_div{
     margin-bottom: -20px;
 }
-#category_text_label{
-    /* border: 1px solid red; */
-    margin-bottom: -50px;
+.category_text_label{
+    margin-bottom: 20px;
+}
+.category_text_label:hover{
+    display: block;
+    cursor: pointer;
 }
 .category_label_input{
     /* border: 1px solid red; */
@@ -221,26 +232,32 @@ body{
 
 .section_dont_show{
     /* border: 1px solid blue; */
+    display: block;
     margin-bottom: 10px;
 }
 
 /* ------------------------------------------- */
 /* show / dont show filter tag */
-/* #other_filter_btns{
+
+#other_filter_btns{
 margin-top: 20px;
-}
+ }
+
 .other_filter_btns{
     display: block;
     position: relative;
 }
+ 
 .section_dont_show{
     display: none;
     position: absolute;
 }
+
+
 .show_label{
     display: block;
     position: relative;
-} */
+} 
 /* End of show / dont show filter tag */
 /* ------------------------------------------- */
 
@@ -277,5 +294,109 @@ margin-top: 20px;
     margin-right: 10px;
 }
 
+/* feture button css remaining */
+.filter_btns1{
+    /* border: 1px solid blue; */
+    margin-top: 20px;
+    height: auto;
+    padding: 0px;
+}
+.filter_btns1 > span{
+    /* 
+    ADD CLICK EVENT ON THIS BUTTON
+    */
+    border: 1px solid black;
+    padding: 12px 30px;
+    font-family: sans-serif;
+}
+
+/* myuDropdown1 (Dropdown Content) (Hidden by Default) */
+#myDropdown1 {
+    display: none;
+    position: absolute;
+    /* min-width: 160px; */
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-right: 10px;
+    background-color: white;
+  }
+  
+  /* Links inside the dropdown */
+  #myDropdown1 a {
+    color: black;
+    text-decoration: none;
+    display: block;
+
+    background-color: white;
+    color: rgb(78, 76, 76);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    /* background-color: #f2f2f2; */
+  }
+  
+  /* Change color of dropdown links on hover */
+  #myDropdown1 a:hover {
+    /* background-color: rgb(209, 203, 203); */
+    cursor: pointer;
+    color: black;
+    background-color: rgb(221, 221, 221);
+}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+  /* Appended container css ----------------------------------------*/
+
+  #container_AllProducts{
+    /* border: 1px solid red; */
+    width: 97%;
+    height: auto;
+    margin-left: 1%;
+    padding: 20px 10px 20px 10px;
+    
+  }
+  #container_AllProducts > div{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    row-gap: 10px;
+    column-gap: -50px;
+    padding-left: 22px;
+  }
+
+#container_AllProducts > div > section{
+    /* border: 1px solid black; */
+    width: 90%;
+    position: relative;
+    padding: 10px 10px 0px 10px;
+}
+#container_AllProducts > div > section:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+#container_AllProducts > div > section:hover button{
+    background-color: rgb(255, 226, 231);
+    border: none;
+    display: block;
+}
+#container_AllProducts > div > section > button:hover{
+    background-color: white;
+    border: none;
+}
+#container_AllProducts > div > section > img{
+    width: 99%;
+}
+#container_AllProducts > div > section > button{
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 36%;
+    padding: 2% 5%;
+    font-size: 16px;
+}
 
 
