@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+    
+    <div id="c-nav">
+        <p>TODAY ONLY: FREE SHIPPING! Shop our SALE styles: 70% off 3+ · 60% off 2 · 50% off 1. And 50% off almost everything else. Use code <br> SHOPTIME.</h2>
+    </div>
+    <div id="crew-nav">
+
+
+        <img src="https://searchlogovector.com/wp-content/uploads/2021/11/jcrew-logo-vector.png" alt="">
+    </div>
+    <h2>Billing Address</h2>
+
+<div id="container">
+    <div id="address"></div>
+    <div id="payment">
+        <input type="number" placeholder="ENTER CARD NUMBER"><br>
+        <input type="text" name="" id=""  placeholder="EXPIRY">
+        <input type="number" name="" id="" placeholder="CVV"><br>
+        <button onclick="indexpage()">CONFIRM ORDER</button>
+        <script>
+
+            function indexpage(){
+                alert("order successfull")
+                window.location.href="index.html"
+            }
+        </script>
+    </div>
+</div>
+   
+</body>
+</html>
+<script>
+            let customer_address=JSON.parse(localStorage.getItem("address"))||[]
+
+let cont=document.getElementById("address")
+            customer_address.forEach((el,index)=>{
+
+let name=document.createElement("h3")
+name.textContent=el.name
+let ad1=document.createElement("ad1")
+ad1.textContent=el.ad1
+let ad2=document.createElement("ad2")
+ad2.textContent=el.ad2
+let phone=document.createElement("p")
+phone.textContent=el.number
+let email=document.createElement("p")
+email.textContent=el.email
+let country=document.createElement("p")
+country.textContent=el.country
+
+
+cont.append(name,ad1, 
+ ad2,phone,email,country)
+
+customer_address.splice(index,1)
+
+localStorage.setItem("address",JSON.stringify(customer_address))
+
+
+
+
+            })
+
+
+</script>

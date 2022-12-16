@@ -16,7 +16,7 @@
     <div id="crew-nav">
 
 
-        <img src="https://brandslogos.com/wp-content/uploads/images/j-crew-logo-vector.svg" alt="">
+        <img src="https://searchlogovector.com/wp-content/uploads/2021/11/jcrew-logo-vector.png" alt="">
     </div>
     
 
@@ -39,6 +39,8 @@
     <p style="margin-top:-20px ;">delivered on or before 28 december</p>
 
  </div>
+ <div id="-box"></div>
+ 
 
 <div id="address">
     <h3>Delivery address</h3>
@@ -46,7 +48,7 @@
     </div>
  <select name="" id="country" >
     <option value="">country</option>
-    <option value="">India</option>
+    <option value="India">India</option>
  </select>
  <input type="text" placeholder="Adress line 1 *" id="ad1">
  <input type="text" placeholder="Adress line 2 *" id="ad2">
@@ -72,11 +74,30 @@
 <script>
     function payment(){
         window.location.href="payment.html"
+
+        let customer_address=JSON.parse(localStorage.getItem("address"))||[]
+
+let name=document.getElementById("name").value
+let ad1=document.getElementById("ad1").value
+let ad2=document.getElementById("ad2").value
+country=document.getElementById("country").value
+let number=document.getElementById("number").value
+let email=document.getElementById("email").value
+
+
+let details={name,ad1,ad2,number,email,country}
+customer_address.push(details)
+localStorage.setItem("address",JSON.stringify(customer_address))
+console.log(details)
+
+
+
     }
 </script>
     
   
     </div>
+    
 
 
     <div id="c-f" >
@@ -86,3 +107,4 @@
     </div>
 </body>
 </html>
+

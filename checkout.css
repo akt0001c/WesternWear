@@ -45,7 +45,8 @@ margin-right: 10px;
 #method{
     height: auto;
     width: 100%;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
    padding-left: 20px;
    font-weight: bold;
 }
@@ -66,7 +67,9 @@ font-size: 13px;
 #address{
     height: auto;
     width: 100%;
-    border: 1px solid grey;padding-left: 20px;
+    ;padding-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
     margin-top: 20px;
     display: flex;
     flex-direction: column;
