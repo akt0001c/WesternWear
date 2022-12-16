@@ -1,7 +1,7 @@
 let productbox= document.querySelector("#product-cart-detail");
 let savedproduct= document.querySelector("#saved-product-box");
 
-//localStorage.setItem("cart",JSON.stringify(data));
+localStorage.setItem("cart",JSON.stringify(data));
 let  productdata= JSON.parse(localStorage.getItem("cart"));
 
 window.onload= ()=>{
