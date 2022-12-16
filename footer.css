@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  #pf{
+    margin-top: 100px;
+    width: 100%;
+    height: 700px;
+    border: 0px solid green;
+    background-color:rgb(241,241,243)
+  }
+  #fcf{
+    padding-top: 50px;
+width: 100%;
+height: 60%;
+border:  0px solid red;
+padding-left: 50px;
+padding-right: 50px;
+display: flex;
+justify-content: space-between
+  }
+  #scf{
+    width: 100%;
+    height: 40%;
+    border:  0px solid red;
+    padding-left: 50px;
+padding-right: 50px;
+      }
+      #fcf>div:nth-child(1){
+width: 65%;
+height: 100%;
+border:  0px solid black;
+display: flex;
+justify-content: space-around;
+      }
+      #fcf>div:nth-child(1)>div>p{
+        font-size: larger;
+      }
+      #fcf>div:nth-child(1)>div>p:hover{
+cursor: pointer;
+text-decoration: underline;
+color: brown;
+      }
+      #fcf>div:nth-child(2){
+        width: 25%;
+        height: 100%;
+        border:  0px solid black;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+              }
+              #fcf>div:nth-child(2)>div>p, #fcf>div:nth-child(2)>div>h4{
+                font-size: larger;
+              }
+              #fcf>div:nth-child(2)>div>p:hover, #fcf>div:nth-child(2)>div>h4:hover{
+                cursor: pointer;
+text-decoration: underline;
+color: brown;
+              }
+              #fcf>div:nth-child(2)>div>button{
+                background-color: black;
+                color:  white;
+                padding: 10px;
+                cursor: pointer;
+              }
+              #fcf>div:nth-child(2)>div>input{
+                padding: 10px;
+              }
+              #scf{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+              }
+              #scf div img:hover, #scf div h2:hover{
+cursor: pointer;
+              }
