@@ -19,20 +19,27 @@
         <img src="https://searchlogovector.com/wp-content/uploads/2021/11/jcrew-logo-vector.png" alt="">
     </div>
     <h2>Billing Address</h2>
+    <h3 style="text-align: center;">Card details</h3>
 
 <div id="container">
     <div id="address"></div>
     <div id="payment">
-        <input type="number" placeholder="ENTER CARD NUMBER"><br>
+      
+        <input id="cn" type="number" placeholder="ENTER CARD NUMBER" maxlength=16><br>
         <input type="text" name="" id=""  placeholder="EXPIRY">
         <input type="number" name="" id="" placeholder="CVV"><br>
         <button onclick="indexpage()">CONFIRM ORDER</button>
         <script>
+let card_num=document.getElementById("cn").value
+if(card_num.length==16){
+    card_num.innerText=null
+}
 
             function indexpage(){
                 alert("order successfull")
                 window.location.href="index.html"
             }
+
         </script>
     </div>
 </div>

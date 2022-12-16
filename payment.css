@@ -61,3 +61,12 @@ button{
     height: auto;
     padding-left: 20px;
 }
+#address{
+    background-color: maroon;
+    color: white;
+    border-radius: 20px;
+    height: 130px;
+}
+p{
+    font-size: 18px;
+}
