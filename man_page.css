@@ -642,7 +642,7 @@ margin-top: 20px;
   }
   #poster_dropdown1 > #Featured_btn1{
     width: 200px;
-    padding: 0px;
+    padding: 0px 0px;
     margin-left: 0px;
   }
   /* ------end of Css of filter & sorting btons -------*/
