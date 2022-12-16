@@ -64,10 +64,6 @@ body{
 
 /* DROPDOWN CSS- Dropdown Button */
 
-#body_div_after-poster{
-    /* border: 1px solid gold; */
-}
-
 .dropbtn {
     background-color: white;
     color: black;
@@ -124,6 +120,7 @@ body{
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
+
 
   /* END OF DROPDOWN CSS */
 
@@ -189,7 +186,7 @@ body{
     margin-left: 30px;
 }
 #dark_dropdopwn_filterbtn2{
-    margin-left: 30px;
+    margin-left: 10px;
 }
 #category_section{
   /* border: 1px solid pink; */
@@ -348,7 +345,7 @@ margin-top: 20px;
   .show {display:block;}
 
 
-  /* Appended container css ----------------------------------------*/
+  /* Appended "container" css ----------------------------------------*/
 
   #container_AllProducts{
     /* border: 1px solid red; */
@@ -398,5 +395,282 @@ margin-top: 20px;
     padding: 2% 5%;
     font-size: 16px;
 }
+
+
+/* ------------------------------------------------ */
+/* media query for small screen */
+
+@media all and (max-width: 601px) and (min-width:200px) {
+    /* Small Screen Styles  */
+
+
+    /* small screen CSS for poster */
+
+    #have_que{
+        /* border: 1px solid red; */
+        height: 40px;
+    }
+    #background_img_poster{
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+    #text_GiftGuide{
+        font-size: 30px;
+        top:10px;
+        left: 28%;
+        font-weight:0.5;
+    }
+    #text_GiftGuide + span{
+        top: 45px;
+        left: 0%;
+        padding: 0px 20px;
+        text-align: center;
+    }
+    #poster_dropdown{
+        /* border: 1px solid red; */
+        padding: 05px 0px;
+        position: absolute;
+        top: 90px;
+        left: 14%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .dropbtn {
+        padding: 5px 12px 5px 12px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 05px;
+        width: 35%;
+        margin-left: 33%;
+    }
+    .dropdown-content {
+        min-width: 50px;
+        margin-top: 130px;
+        margin-left: 54px;
+    }
+    .dropdown-content a {
+    padding: 10px 40px 10px 40px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+  }
+  #best_seller_top_rated_btn{
+    display: flex;
+    flex-direction: column;
+  }
+  #best_seller_btn{
+    padding: 5px 12px 5px 12px;
+    margin-top: 1px;
+    margin-left: 80px;
+    width: 50%;
+}
+#top_rated_btn{
+    padding: 5px 12px 5px 12px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 2px;
+}
+/* end of poster for small screen (css part) */
+
+/* filter & sort button */
+#main_div{
+    display: flex;
+    margin-top: 10px;
+    height: auto;
+    width: 95%;
+    margin-left: 20px;
+}
+.filter_btns > span{
+    padding: 12px 20px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+.filter_btns > span:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+#dark_dropdopwn_filterbtn1{
+    margin-left: 0px;
+    display: none;
+}
+#dark_dropdopwn_filterbtn2{
+    margin-left: 0px;
+}
+#myDropdown1 {
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-right: 0px;
+    width: 200px;
+    background-color: white;
+  }
+  #poster_dropdown1 > #Featured_btn1{
+    width: 200px;
+    padding: 0px;
+    margin-left: 0px;
+  }
+  /* ------end of Css of filter & sorting btons -------*/
+
+  #container_AllProducts{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    padding: 15px 05px 05px 05px;
+  }
+  #container_AllProducts > div{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    row-gap: 10px;
+    column-gap: -50px;
+    padding-left: 22px;
+  }
+  #container_AllProducts > div > section > button{
+    left: 35%;
+  }
+
+}
+/* ------------------------------------------------ */
+@media all and (max-width: 1100px) and (min-width:602px) {
+    /* Small Screen Styles  */
+
+
+    /* small screen CSS for poster */
+
+    #background_img_poster{
+        width: 100%;
+        height: 350px;
+        text-align: center;
+    }
+    #text_GiftGuide{
+        font-size: 30px;
+        top:20px;
+        left: 40%;
+        font-weight:0.5;
+        font-size: 40px;
+    }
+    #text_GiftGuide + span{
+        top: 80px;
+        left: 17%;
+        padding: 0px 20px;
+        text-align: center;
+    }
+    #poster_dropdown{
+        /* border: 1px solid red; */
+        padding: 20px 160px;
+        position: absolute;
+        top: 150px;
+        left: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .dropbtn {
+        padding: 10px 30px 10px 25px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 05px;
+        width: auto;
+        margin-left: 15%;
+    }
+    .dropdown-content {
+        min-width: 70px;
+        margin-top: 130px;
+        margin-left: 60px;
+    }
+    .dropdown-content a {
+    padding: 10px 70px 10px 70px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+  }
+  #best_seller_top_rated_btn_div{
+    display: flex;
+    flex-direction: column;
+  }
+  #best_seller_btn{
+    padding: 10px 12px 10px 12px;
+    margin-top: 10px;
+    margin-left: 105px;
+    width: 50%;
+}
+#top_rated_btn{
+    padding: 10px 12px 10px 12px;
+    margin-left: 140px;
+    margin-right: 100px;
+    margin-top: 05px;
+}
+/* end of poster for small screen (css part) */
+
+/* filter & sort button */
+#main_div{
+    display: flex;
+    margin-top: 10px;
+    height: auto;
+    width: 95%;
+    margin-left: 20px;
+}
+.filter_btns > span{
+    padding: 12px 20px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+.filter_btns > span:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+#dark_dropdopwn_filterbtn1{
+    margin-left: 0px;
+    display: none;
+}
+#dark_dropdopwn_filterbtn2{
+    margin-left: 0px;
+}
+#myDropdown1 {
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-right: 0px;
+    width: 200px;
+    background-color: white;
+  }
+  #poster_dropdown1 > #Featured_btn1{
+    width: 200px;
+    padding: 0px;
+    margin-left: 0px;
+  }
+  /* ------end of Css of filter & sorting btons -------*/
+
+  #container_AllProducts{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    padding: 15px 05px 05px 05px;
+  }
+  #container_AllProducts > div{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    row-gap: 10px;
+    column-gap: -50px;
+    padding-left: 22px;
+  }
+  #container_AllProducts > div > section > button{
+    left: 35%;
+  }
+
+}
+
+
+
+
 
 
