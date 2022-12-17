@@ -1,0 +1,223 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  #fh{
+    width: 100%;
+    height: 180px;
+    background-color: rgb(187, 72, 31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  #fh>h1{
+    font-size: 40px;
+  }
+  #fh>h3{
+    font-size: 25px;
+  }
+  #fh>h1,  #fh>h3,  #fh>p{
+   color: white;
+  
+  }
+  #fh>p{
+    text-decoration: underline;
+  }
+  #fh>p:hover{
+    cursor: pointer;
+  }
+  #sh{
+    margin-top: 50px;
+    width: 100%;
+    height: 700px;
+   
+        background-image: url('https://www.jcrew.com/brand_creative/homepage2022/15-Dec4/2022dec2_1213_hp_w_img0.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+  }
+  #sh>div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+   padding-top: 100px;
+  }
+  #sh>div>div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  #sh>div>div:nth-child(1)>h1{
+    font-size: 60px;
+    color: orangered;
+    text-align: center;
+  }
+  #sh>div>div:nth-child(1)>p{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+  #sh>div>div:nth-child(2)>button{
+    padding: 5px 10px 5px 10px;
+    font-size: large;
+    background-color: white;
+  }
+  #sh>div>div:nth-child(2)>button:hover{
+    cursor: pointer;
+    background-color: yellowgreen;
+    color: white;
+  }
+
+  #th{
+    margin-top: 30px;
+    padding: 0px 150px 0px 150px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  #th>img{
+    cursor: pointer;
+  }
+  #frh{
+    margin-top: 30px;
+    padding: 0px 150px 0px 150px;
+  }
+  #frh>img{
+    cursor: pointer;
+  }
+  #fth{
+    margin-top: 30px;
+    padding: 0px 290px 0px 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  #fth>p{
+    font-size: 22px;
+    
+  }
+  #fth>button{
+    padding: 7px 20px 7px 20px;
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid navy;
+  }
+  #fth>button:hover{
+    cursor: pointer;
+    background-color: navajowhite;
+    color:navy;
+  }
+  #msh{
+    
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    height: 1420px;
+    background-color: rgb(249,244,238);
+    margin-bottom: 50px;
+  }
+  #msh1{
+    
+    padding: 80px 80px 20px 80px;
+   
+  }
+  #msh1>img{
+    width: 200px;
+  }
+  #msh2{
+    padding: 20px 100px 20px 100px;
+  }
+  #msh2>p{
+    font-size: 25px;
+    cursor: pointer;
+  }
+  #msh3{
+    padding: 0px 100px 20px 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+  }
+  #msh3>div>img{
+    width: 300px;
+    cursor: pointer;
+  }
+  #msh3>div>a{
+    color: black;
+  }
+  #msh4>h1{
+    font-size: 40px;
+  }
+  #msh4{
+    padding: 0px 100px 20px 100px;
+  }
+  #msh5{
+    padding: 0px 100px 0px 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  #msh5>div{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  #msh5>div>img{
+    width: 290px;
+    cursor: pointer;
+  }
+  #msh5>div>a{
+    color: black;
+    
+  }
+  
+  #svh>p{
+font-size: 30px;
+text-align: center;
+  }
+  #egh{
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #egh>div>img{
+    width: 300px;
+    cursor: pointer;
+  }
+  #egh>div>a{
+    color: black;
+    font-size: 20px;
+  }
+  #ngh{
+    margin-top: 60px;
+    padding: 0px 100px 0px 200px;
+  }
+  #ngh>img{
+    width: 700px;
+    cursor: pointer;
+  }
+  #tgh{
+    margin-top: 40px;
+  }
+  #tgh>p{
+    text-align: center;
+    font-size: 30px;
+  }
+  #elh{
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+  }
+  #elh>div>img{
+    width: 240px;
+    cursor: pointer;
+  }
+  #elh>div>a{
+    color: black;
+  }
