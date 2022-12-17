@@ -297,9 +297,18 @@ promoinputbar.oninput= ()=>{
          applyPromo(text);
   };
 
-checkoutbtn.onclick= ()=>{
-    let orderdetails= {
-        username:user_name,
-        
+  checkoutbtn.onclick= ()=>{
+    let total_order_price=getTotal();
+    let total_product_count=getCount();
+    
+        let orderdetails= {
+            username:user_name,
+            no_of_product:total_product_count,
+            order_price:total_order_price,
+            order_status:true,
+        };
+    
+        localStorage.setItem("orderdetails",JSON.stringify(orderdetails));
+        window.location.href="checkout.html"
     };
-};
+    
