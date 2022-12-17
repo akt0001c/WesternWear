@@ -138,7 +138,7 @@
             "discount":35
         }
      ],
-     "Girl":[
+     "girl":[
         {
             "image":"https://www.jcrew.com/s7-img-facade/BM142_GP0266?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
             "category": "Girls",
@@ -463,5 +463,16 @@
                 "price": 13520,
                 "discount": 6
                 }
+        ],
+        "users":[
+
+        ],
+        "admin":[
+            {
+                "userid":"admin",
+                "password":"admin123",
+                "email":"admin123@gmail.com"
+            }
+             
         ]
 }
