@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="./styles/navbar.css">  -->
+     <link rel="stylesheet" href="./styles/footer.css">
     <style>
+        body{
+            margin:0;
+            padding:0;
+        }
         #question{
             text-align: center;
             margin-top: 25px;
             margin-bottom: 25px;
             color: #3a3a3a;
+            
         }
         #main_des{
             width: 80%;
             margin: auto;
+            
         }
         #sub_main{
             display: flex;
@@ -163,10 +171,14 @@
         #zoom>img{
             zoom: 200%;
         }
+        #bj700{
+          display: none;
+        }
+      
     </style>
 </head>
 <body>
-    <div id="navbar"></div>
+    <div id="nav"></div>
     <hr>
     <p id="question">Have a question? We can help</p>
     <hr>
@@ -181,7 +193,7 @@
                 <div id="zoom"></div>
                 <div id="d_1">
                     <h3 id="product_n"></h3>
-                <p>Item BJ700</p>
+                <p id="bj700">Item BJ700</p>
                 <div id="star">
                     <img src="https://jcrew.ugc.bazaarvoice.com/1706redes-en_us/4_0/5/rating.png" alt="">
                     <p><u>2 REVIEWS</u></p>
@@ -254,7 +266,7 @@
             </div>
         </div>
     </div>
-    
+    <div id="footer"></div>
 </body>
 </html>
-<script src="description.js"></script>
+<script type="module" src="description.js"></script>

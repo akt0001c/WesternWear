@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="./styles/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="main-signin-div">
-        <h1>Sign In</h1>
+        <h1>Login</h1>
         <form>
             <div><input type="email" placeholder="Email Address" id="user-email" required>
             </div>
-            <div><input type="password" placeholder="Password" id="user-pass" required></div>
+            <div id="password-box"><input type="password" placeholder="Password" id="user-pass" required><i class="fa fa-eye-slash"></i></div>
             <div id="login-btn"><input type="submit" value="SIGN IN NOW"></div>
         </form>
         <p id="terms-condition">The site is protected by reCAPTCHA and the Google<br><a href="">Privacy Policy</a> and <a href="">Terms of service </a> apply</p>
-        <span>Don't have an account? <a href="">Sign up now</a></span>
+        <span>Don't have an account? <a href="signup.html">Sign up now</a> or <a href="adminlogin.html">Login as admin</a></span>
     </div>
 </body>
 </html>
+<script src="./scripts/signin.js"></script>

@@ -1,0 +1,22 @@
+body{
+    background-image: url("https://thumbs.dreamstime.com/z/admin-login-sign-table-made-wood-68499314.jpg");
+}
+#admin_navbar{
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #f11239; 
+}
+#admin_navbar>h2{
+    color: white;
+}
+#admin_navbar>h2:hover{
+    cursor: pointer;
+    text-decoration: 0.5px underline white;
+}
