@@ -1,4 +1,4 @@
-let url = "http://localhost:3000/admin";
+let url = "http://localhost:3000/products";
 
 async function getdata(){
     let res = await fetch(url);

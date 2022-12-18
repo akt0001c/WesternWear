@@ -10,7 +10,7 @@ const  navbar= ()=>{
     </div>
     <div id="snp">
       <div  class="navbar">
-        <a href="#"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjRf4SBo8WQRTSumbr3s1dQCjIfzkU2pPrgpY51MQ3&s" width="50%" alt=""></a>
+        <a href="index.html"> <img src="western_wear_logo.png" alt="" id="logo-img"></a>
         <div class="dropdown">
           <button class="dropbtn">Gifts
             <i class="fa fa-caret-down"></i>
@@ -20,13 +20,13 @@ const  navbar= ()=>{
               <div class="column">
                <a href="#"><b>Gifts</b></a>
                <br>
-               <a href="#">For Women
+               <a href="man_page.html" class="women-shop">For Women
               </a>
               <a href="">For Men
               </a>
-               <a href="">For Girls
+               <a href="man_page.html" class="girl-shop">For Girls
               </a>
-               <a href="">For Boys
+               <a href="man_page.html" class="boy-shop">For Boys
               </a>
                <a href="">For the Home
               </a>
@@ -62,13 +62,13 @@ const  navbar= ()=>{
                               <a href="#"><b>Shop New Arrivals
                               </b></a>
                               <br>
-                              <a href="#">For Women
+                              <a href="man_page.html" class="women-new-shop">For Women
                              </a>
                              <a href="">For Men
                              </a>
-                              <a href="">For Girls
+                              <a href="man_page.html" class="girl-new-shop">For Girls
                              </a>
-                              <a href="">For Boys
+                              <a href="man_page.html" class="boy-new-shop">For Boys
                              </a>
                               
                              </div>
@@ -810,14 +810,14 @@ const  navbar= ()=>{
           </div>
       </div>
         <div>
-          <div id="form1" class="example" action="action_page.php">
+          <div id="form1" class="example" >
             <input type="text" placeholder="Search..." name="search" id="srch">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <button id="search-btn"><i class="fa fa-search"></i></button>
           </div>
           <div id="lc">
-            <img src="https://e7.pngegg.com/pngimages/178/595/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black-thumbnail.png" width="30px" alt="">  
+            <a href="signup.html"><img src="https://e7.pngegg.com/pngimages/178/595/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black-thumbnail.png" width="30px" alt=""></a>  
             
-            <img src="https://w1.pngwing.com/pngs/720/451/png-transparent-shopping-cart-icon-shopping-bag-tote-bag-icon-design-online-shopping-black-and-white-area-rectangle.png" width="30px" alt="">
+            <a href="cart.html"><img src="https://w1.pngwing.com/pngs/720/451/png-transparent-shopping-cart-icon-shopping-bag-tote-bag-icon-design-online-shopping-black-and-white-area-rectangle.png" width="30px" alt=""></a>
           </div>
         </div>
     </div>

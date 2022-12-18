@@ -10,7 +10,7 @@
      <button id="btnadd">Add Product</button>
     </div> */}
 
-   let url = "http://localhost:3000/admin"
+   let url = "http://localhost:3000/products"
     document.getElementById("btnadd").addEventListener("click", async function(){
        let image = document.getElementById("admin_img").value;
         let category = document.getElementById("admin_cat").value;
