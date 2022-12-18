@@ -1,4 +1,12 @@
+const baseURL1 = JSON.parse(localStorage.getItem("baseURL"));
+const baseURL = "http://localhost:3000";
 
+window.onload = async ()=> {
+    let res = await fetch(baseURL1);
+    let data = await res.json();
+    console.log(data)
+    appendData(data);
+}
 
 // Logic For dropdown content of poster
 
@@ -16,9 +24,6 @@ function dropdown_content (){
     }else {
         options.style.display = "block";
     }
-
-  
-   
 }
 // DropDown of featured button-------------
 let dropdown_btn2 = document.querySelector("#Featured_btn1");
@@ -57,31 +62,30 @@ show_filter_btn.addEventListener("click", ()=> {
  }
 
 
-
-// All diffrent filters position (relative/absolute)
+ // All diffrent filters position (relative/absolute)
 
 let category = document.getElementById("category_div");
 category.addEventListener("click", hide_Filter_category);
 
-let discount = document.querySelector(".discount_min_div");
+let discount = document.querySelector("#discount_div");
 discount.addEventListener("click",hide_Filter_discount);
 
-let size = document.getElementById("size_div");
+let size = document.getElementById("size_Text_div");
 size.addEventListener("click",hide_Filter_size);
 
-let color = document.getElementById("color_div");
+let color = document.getElementById("color_text_div");
 color.addEventListener("click",hide_Filter_color);
 
-let pattern = document.getElementById("pattern_div");
+let pattern = document.getElementById("pattern_text_div");
 pattern.addEventListener("click",hide_Filter_pattern);
 
-let trending = document.getElementById("trending_div");
+let trending = document.getElementById("trending_text_div");
 trending.addEventListener("click",hide_Filter_trending);
 
-let brand = document.getElementById("brand_div");
+let brand = document.getElementById("brand_text_div");
 brand.addEventListener("click",hide_Filter_brand);
 
-let re_imagined = document.getElementById("reImagined_div");
+let re_imagined = document.getElementById("reImagined_text_div");
 re_imagined.addEventListener("click",hide_Filter_Reimagined);
 
 
@@ -108,7 +112,7 @@ function hide_Filter_discount(){
     main_section.style.position = "relative";
     } else {
         main_section.style.display = "none";
-        main_section.style.position = "absolute"
+        main_section.style.position = "absolute";
     }
    
 }
@@ -206,6 +210,404 @@ function widthOfContainerLess(){
         container_AllProducts.style.padding = "20px 10px 20px 10px";
     }
 }
+
+
+// -------------------------------------------------------
+// Dropdown functionality
+let poster_dropdown = document.getElementById("poster_dropdown_default");
+let men_dropdown =  document.getElementById("for_men_poster");
+let women_dropdown =  document.getElementById("for_her_poster");
+let boys_dropdown =  document.getElementById("for_boys_poster");
+let girls_dropdown =  document.getElementById("for_girls_poster");
+let others_dropdown =  document.getElementById("for_others_poster");
+
+// dropdown MEN SECTION
+men_dropdown.onclick = async ()=>{
+    poster_dropdown.innerHTML = `For men <span><i id="dropdown_arrow" class="fa-solid fa-angle-down"></i></span>`;
+
+    let res = await fetch(`${baseURL}/men`);
+    let data = await res.json();
+    console.log(data);
+    appendData(data);
+}
+
+// dropdown WOMEN SECTION
+women_dropdown.onclick = async ()=>{
+    console.log("insde womenr")
+    poster_dropdown.innerHTML = `For women <span><i id="dropdown_arrow" class="fa-solid fa-angle-down"></i></span>`;
+
+    let res = await fetch(`${baseURL}/women`);
+    let data = await res.json();
+    console.log(data)
+    appendData(data)
+}
+
+// dropdown BOYS SECTION
+boys_dropdown.onclick = async ()=>{
+    poster_dropdown.innerHTML = `For boys <span><i id="dropdown_arrow" class="fa-solid fa-angle-down"></i></span>`;
+    let res = await fetch(`${baseURL}/Boy`);
+    let data = await res.json();
+    console.log(data)
+    appendData(data)
+}
+
+// dropdown GIRLS SECTION
+girls_dropdown.onclick = async ()=>{
+    poster_dropdown.innerHTML = `For girls <span><i id="dropdown_arrow" class="fa-solid fa-angle-down"></i></span>`;
+    let res = await fetch(`${baseURL}/girl`);
+    let data = await res.json();
+    console.log(data)
+    appendData(data)
+}
+
+
+// APPENDING FUNCTIONALITY
+
+let container = document.getElementById("container_divison");
+    function appendData(data){
+        
+        container.innerHTML = "";
+        console.log(data)
+        data.forEach(function(el,index) {
+
+            let section = document.createElement("section");
+            section.setAttribute("class","card_individual_section");
+            section.onclick = ()=>{
+                description_page_data(el)
+            }
+
+            let image = document.createElement("img");
+            image.src = el.image;
+
+            let tag  = document.createElement("p");
+            tag.innerText = el.tag;
+            tag.style.fontWeight = "bold";
+            tag.style.color = "rgb(219, 49, 49)";
+
+            let name  = document.createElement("p");
+            name.innerText = el.product_name;
+            name.style.fontWeight = "bold";
+            name.style.fontSize = "20px";
+            name.style.color = "rgb(77, 74, 74)";
+
+            let cross_price = document.createElement("del");
+            cross_price.innerText = `INR ${el.cross_price}`;
+            cross_price.style.color = "black";
+            cross_price.style.fontWeight = "bold";
+
+            let price =  document.createElement("p");
+            price.innerText = `INR ${el.price}`;
+            price.style.color = "rgbrgb(77, 74, 74)";
+            price.style.fontWeight = "bold";
+            price.style.fontSize = "20px";
+
+            let btn = document.createElement("button");
+            btn.innerText = "Quick Buy";
+
+            section.append(image,tag,name,cross_price,price,btn);
+            container.append(section);
+        });
+}
+
+// function going to description of every div;
+
+function description_page_data(el){
+    console.log(el)
+    let obj_description={
+        image: el.image,
+        category: el.category,
+        tag: el.tag,
+        product_name: el.product_name,
+        cross_price: el.cross_price,
+        price: el.price,
+        discount: el.discount
+        }
+    
+    localStorage.setItem("description",JSON.stringify(obj_description));
+
+    window.location.href = "./description.html";
+}
+
+
+// SORTING -------------------------------------------------
+// Sorting by (Featured button) 
+
+let best_seller_btn = document.getElementById("best_seller_btn");
+best_seller_btn.onclick = async ()=> {
+
+    let poster_dropdown_default = document.getElementById("poster_dropdown_default");
+    let category_selected = poster_dropdown_default.innerText;
+    console.log(category_selected);
+
+    if(category_selected.includes("women")){
+        
+        let res = await fetch(`${baseURL}/women?tag=BEST SELLER`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("men")){
+        let res = await fetch(`${baseURL}/men?tag=BEST SELLER`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("boys")){
+            
+        let res = await fetch(`${baseURL}/Boy?tag=BEST SELLER`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("girls")){
+            
+        let res = await fetch(`${baseURL}/girl?tag=BEST SELLER`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+    }
+
+}
+
+// Sorting by (Featured button) ---> "New Arrivals"
+
+let top_rated_btn = document.getElementById("top_rated_btn");
+top_rated_btn.onclick = async ()=> {
+
+    let poster_dropdown_default = document.getElementById("poster_dropdown_default");
+    let category_selected = poster_dropdown_default.innerText;
+    console.log(category_selected);
+
+    if(category_selected.includes("women")){
+        
+        let res = await fetch(`${baseURL}/women?tag=New Arival`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("men")){
+        
+        let res = await fetch(`${baseURL}/men?tag=New Arival`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("boys")){
+            
+        let res = await fetch(`${baseURL}/Boy?tag=New Arival`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("girls")){
+            
+        let res = await fetch(`${baseURL}/girl?tag=New Arival`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+    }
+
+}
+
+// Featured Button near filter button
+
+// Best seller
+let bestSeller = document.getElementById("BestSeller_btn_in_container")
+bestSeller.onclick = async ()=> {
+
+    let poster_dropdown_default = document.getElementById("poster_dropdown_default");
+    let category_selected = poster_dropdown_default.innerText;
+    console.log(category_selected);
+
+    if(category_selected.includes("women")){
+        
+        let res = await fetch(`${baseURL}/women?tag=BEST SELLER`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("men")){
+         "Men";
+        let res = await fetch(`${baseURL}/men?tag=BEST SELLER`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("boys")){
+            
+        let res = await fetch(`${baseURL}/Boy?tag=BEST SELLER`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("girls")){
+            
+        let res = await fetch(`${baseURL}/girl?tag=BEST SELLER`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+    }
+
+}
+
+// New arrivals
+let newArrivals = document.getElementById("NewArrivals_btn_in_container");
+newArrivals.onclick = async ()=> {
+
+    let poster_dropdown_default = document.getElementById("poster_dropdown_default");
+    let category_selected = poster_dropdown_default.innerText;
+    console.log(category_selected);
+
+    if(category_selected.includes("women")){
+        
+        let res = await fetch(`${baseURL}/women?tag=New Arival`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("men")){
+        
+        let res = await fetch(`${baseURL}/men?tag=New Arival`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("boys")){
+            
+        let res = await fetch(`${baseURL}/Boy?tag=New Arival`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("girls")){
+            
+        let res = await fetch(`${baseURL}/girl?tag=New Arival`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+    }
+
+}
+
+// Price Low to high
+let price_LtH = document.getElementById("price_LtH"); 
+let price_HtL = document.getElementById("price_HtL"); 
+
+price_LtH.onclick = async ()=> {
+
+    let poster_dropdown_default = document.getElementById("poster_dropdown_default");
+    let category_selected = poster_dropdown_default.innerText;
+    console.log(category_selected);
+
+    if(category_selected.includes("women")){
+        
+        let res = await fetch(`${baseURL}/women?_sort=price&_order=asc`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("men")){
+        
+        let res = await fetch(`${baseURL}/men?_sort=price&_order=asc`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("boys")){
+            
+        let res = await fetch(`${baseURL}/Boy?_sort=price&_order=asc`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("girls")){
+            
+        let res = await fetch(`${baseURL}/girl?_sort=price&_order=asc`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+    }
+}
+
+// Price High to Low
+
+price_HtL.onclick = async ()=> {
+
+    let poster_dropdown_default = document.getElementById("poster_dropdown_default");
+    let category_selected = poster_dropdown_default.innerText;
+    console.log(category_selected);
+
+    if(category_selected.includes("women")){
+        
+        let res = await fetch(`${baseURL}/women?_sort=price&_order=desc`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("men")){
+        
+        let res = await fetch(`${baseURL}/men?_sort=price&_order=desc`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("boys")){
+            
+        let res = await fetch(`${baseURL}/Boy?_sort=price&_order=desc`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+
+    } else if(category_selected.includes("girls")){
+            
+        let res = await fetch(`${baseURL}/girl?_sort=price&_order=desc`);
+        let data = await res.json();
+        // let actual_data = data;
+        console.log(data);
+        appendData(data);
+    }
+}
+
+// Done with all the buttons now only filter section is remaining
+
+// filter section with Category & discounts
+
+// let checkbox = document.querySelectorAll(".dont_show");
+
+// for(box of checkbox){
+//     let box_text = box.innerText
+//     //console.log(box_text)
+//     box.onchange = ()=>{
+//         checkBox_func(box_text)
+//     }
+// }
+
+// function checkBox_func(text){
+//     console.log(text)
+// }
 
 
 
