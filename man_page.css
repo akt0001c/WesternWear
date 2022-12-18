@@ -1,0 +1,676 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#have_que{
+    /* border: 1px solid red; */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-family: soleil, Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+#background_img_section{
+    /* border: 1px solid red; */
+    position: relative;
+    opacity: 1; 
+}
+#background_img_poster{
+    width: 95%;
+    height: 350px;
+    margin-left: 2.5%;
+}
+#text_GiftGuide{
+    position: absolute;
+    font-size: 75px;
+    top:25px;
+    left: 37%;
+    color: white;
+    font-family: freight-big-pro;
+    font-weight:0.5;
+    -webkit-font-smoothing: antialiased;
+}
+#text_GiftGuide + span{
+    position: absolute;
+    color: white;
+    top: 115px;
+    left: 33%;
+    letter-spacing: 0.125vh;
+    font-weight: bold;
+    font-family: freight-big-pro,sans-serif;
+}
+ #poster_dropdown{
+    /* border: 1px solid red; */
+    padding: 30px 300px 30px;
+    position: absolute;
+    top: 140px;
+    left: 24%;
+}
+
+/*
+#poster_dropdown > select{
+    padding: 10px 40px 10px 40px;
+    box-shadow: 0px;
+    
+}
+.poster_dropdown_content{
+    padding: 20px;
+    box-shadow: none;
+    color: red;
+    
+} */
+
+/* DROPDOWN CSS- Dropdown Button */
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px 120px 16px 120px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+
+  #dropdown_arrow{
+    margin-left: 30px;
+    margin-right: -40px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(82, 80, 80, 0.2);
+    z-index: 1;
+    margin-top: -30px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+
+    background-color: white;
+    color: #da2c05;
+    padding: 16px 91px 16px 120px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(209, 203, 203);
+    cursor: pointer;
+}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+  /* END OF DROPDOWN CSS */
+
+
+#best_seller_btn{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 16px 80px 16px 80px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-left: -200px;
+}
+#best_seller_btn:hover{
+    background-color: #fdd3dc;
+    color: black;
+}
+
+#top_rated_btn{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 16px 80px 16px 80px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-left: 220px;
+}
+#top_rated_btn:hover{
+    background-color: #fdd3dc;
+    color: black;
+}
+
+/* filter buttons css */
+/* filter buttons css */
+
+#main_div{
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 30px;
+    height: auto;
+    width: 95%;
+    margin-left: 2.5%;
+}
+.filter_btns{
+    /* border: 1px solid blue; */
+    margin-top: 20px;
+    height: auto;
+}
+.filter_btns > span{
+    border: 1px solid black;
+    padding: 12px 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+.filter_btns > span:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+#dark_dropdopwn_filterbtn1{
+    margin-left: 30px;
+}
+#dark_dropdopwn_filterbtn2{
+    margin-left: 10px;
+}
+#category_section{
+  /* border: 1px solid pink; */
+  margin-top: 20px;
+  margin-left: 20px;
+  height: auto;
+  display: none;
+  padding-bottom: 20px;
+}
+
+#category_section > #category_div{
+    margin-bottom: -20px;
+}
+.category_text_label{
+    margin-bottom: 20px;
+}
+.category_text_label:hover{
+    display: block;
+    cursor: pointer;
+}
+.category_label_input{
+    /* border: 1px solid red; */
+    padding: 05px 20px;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+#for_filter_text_label_1{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+}
+.category_text_label{
+    /* border: 1px solid black; */
+    font-size: large;
+    font-family: sans-serif;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 10px 20px;
+    /* justify-content: space-between; */
+}
+
+.section_dont_show{
+    /* border: 1px solid blue; */
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------------- */
+/* show / dont show filter tag */
+
+#other_filter_btns{
+margin-top: 20px;
+ }
+
+.other_filter_btns{
+    display: block;
+    position: relative;
+}
+ 
+.section_dont_show{
+    display: none;
+    position: absolute;
+}
+
+
+.show_label{
+    display: block;
+    position: relative;
+} 
+/* End of show / dont show filter tag */
+/* ------------------------------------------- */
+
+/* individual filters side - downArrow */
+#filter_downArrow1{
+    margin-left: 50px;
+    margin-right: 10px;
+}
+#filter_downArrow2{
+    margin-left: 53px;
+    margin-right: 10px;
+}
+#filter_downArrow3{
+    margin-left: 90px;
+    margin-right: 10px;
+}
+#filter_downArrow4{
+    margin-left: 82px;
+    margin-right: 10px;
+}
+#filter_downArrow5{
+    margin-left: 66px;
+    margin-right: 10px;
+}
+#filter_downArrow6{
+    margin-left: 54px;
+}
+#filter_downArrow7{
+    margin-left: 77px;
+    margin-right: 10px;
+}
+#filter_downArrow8{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+/* feture button css remaining */
+.filter_btns1{
+    /* border: 1px solid blue; */
+    margin-top: 20px;
+    height: auto;
+    padding: 0px;
+}
+.filter_btns1 > span{
+    /* 
+    ADD CLICK EVENT ON THIS BUTTON
+    */
+    border: 1px solid black;
+    padding: 12px 30px;
+    font-family: sans-serif;
+}
+
+/* myuDropdown1 (Dropdown Content) (Hidden by Default) */
+#myDropdown1 {
+    display: none;
+    position: absolute;
+    /* min-width: 160px; */
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-right: 10px;
+    background-color: white;
+  }
+  
+  /* Links inside the dropdown */
+  #myDropdown1 a {
+    color: black;
+    text-decoration: none;
+    display: block;
+
+    background-color: white;
+    color: rgb(78, 76, 76);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    /* background-color: #f2f2f2; */
+  }
+  
+  /* Change color of dropdown links on hover */
+  #myDropdown1 a:hover {
+    /* background-color: rgb(209, 203, 203); */
+    cursor: pointer;
+    color: black;
+    background-color: rgb(221, 221, 221);
+}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+  /* Appended "container" css ----------------------------------------*/
+
+  #container_AllProducts{
+    /* border: 1px solid red; */
+    width: 97%;
+    height: auto;
+    margin-left: 1%;
+    padding: 20px 10px 20px 10px;
+    
+  }
+  #container_AllProducts > div{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    row-gap: 10px;
+    column-gap: -50px;
+    padding-left: 22px;
+  }
+
+#container_AllProducts > div > section{
+    /* border: 1px solid black; */
+    width: 90%;
+    position: relative;
+    padding: 10px 10px 0px 10px;
+}
+#container_AllProducts > div > section:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+#container_AllProducts > div > section:hover button{
+    background-color: rgb(255, 226, 231);
+    border: none;
+    display: block;
+}
+#container_AllProducts > div > section > button:hover{
+    background-color: white;
+    border: none;
+}
+#container_AllProducts > div > section > img{
+    width: 99%;
+}
+#container_AllProducts > div > section > button{
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 36%;
+    padding: 2% 5%;
+    font-size: 16px;
+}
+
+
+/* ------------------------------------------------ */
+/* media query for small screen */
+
+@media all and (max-width: 601px) and (min-width:200px) {
+    /* Small Screen Styles  */
+
+
+    /* small screen CSS for poster */
+
+    #have_que{
+        /* border: 1px solid red; */
+        height: 40px;
+    }
+    #background_img_poster{
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+    #text_GiftGuide{
+        font-size: 30px;
+        top:10px;
+        left: 28%;
+        font-weight:0.5;
+    }
+    #text_GiftGuide + span{
+        top: 45px;
+        left: 0%;
+        padding: 0px 20px;
+        text-align: center;
+    }
+    #poster_dropdown{
+        /* border: 1px solid red; */
+        padding: 05px 0px;
+        position: absolute;
+        top: 90px;
+        left: 14%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .dropbtn {
+        padding: 5px 12px 5px 12px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 05px;
+        width: 35%;
+        margin-left: 33%;
+    }
+    .dropdown-content {
+        min-width: 50px;
+        margin-top: 130px;
+        margin-left: 54px;
+    }
+    .dropdown-content a {
+    padding: 10px 40px 10px 40px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+  }
+  #best_seller_top_rated_btn{
+    display: flex;
+    flex-direction: column;
+  }
+  #best_seller_btn{
+    padding: 5px 12px 5px 12px;
+    margin-top: 1px;
+    margin-left: 80px;
+    width: 50%;
+}
+#top_rated_btn{
+    padding: 5px 12px 5px 12px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 2px;
+}
+/* end of poster for small screen (css part) */
+
+/* filter & sort button */
+#main_div{
+    display: flex;
+    margin-top: 10px;
+    height: auto;
+    width: 95%;
+    margin-left: 20px;
+}
+.filter_btns > span{
+    padding: 12px 20px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+.filter_btns > span:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+#dark_dropdopwn_filterbtn1{
+    margin-left: 0px;
+    display: none;
+}
+#dark_dropdopwn_filterbtn2{
+    margin-left: 0px;
+}
+#myDropdown1 {
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-right: 0px;
+    width: 200px;
+    background-color: white;
+  }
+  #poster_dropdown1 > #Featured_btn1{
+    width: 200px;
+    padding: 0px;
+    margin-left: 0px;
+  }
+  /* ------end of Css of filter & sorting btons -------*/
+
+  #container_AllProducts{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    padding: 15px 05px 05px 05px;
+  }
+  #container_AllProducts > div{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    row-gap: 10px;
+    column-gap: -50px;
+    padding-left: 22px;
+  }
+  #container_AllProducts > div > section > button{
+    left: 35%;
+  }
+
+}
+/* ------------------------------------------------ */
+@media all and (max-width: 1100px) and (min-width:602px) {
+    /* Small Screen Styles  */
+
+
+    /* small screen CSS for poster */
+
+    #background_img_poster{
+        width: 100%;
+        height: 350px;
+        text-align: center;
+    }
+    #text_GiftGuide{
+        font-size: 30px;
+        top:20px;
+        left: 40%;
+        font-weight:0.5;
+        font-size: 40px;
+    }
+    #text_GiftGuide + span{
+        top: 80px;
+        left: 17%;
+        padding: 0px 20px;
+        text-align: center;
+    }
+    #poster_dropdown{
+        /* border: 1px solid red; */
+        padding: 20px 160px;
+        position: absolute;
+        top: 150px;
+        left: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .dropbtn {
+        padding: 10px 30px 10px 25px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 05px;
+        width: auto;
+        margin-left: 15%;
+    }
+    .dropdown-content {
+        min-width: 70px;
+        margin-top: 130px;
+        margin-left: 60px;
+    }
+    .dropdown-content a {
+    padding: 10px 70px 10px 70px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+  }
+  #best_seller_top_rated_btn_div{
+    display: flex;
+    flex-direction: column;
+  }
+  #best_seller_btn{
+    padding: 10px 12px 10px 12px;
+    margin-top: 10px;
+    margin-left: 105px;
+    width: 50%;
+}
+#top_rated_btn{
+    padding: 10px 12px 10px 12px;
+    margin-left: 140px;
+    margin-right: 100px;
+    margin-top: 05px;
+}
+/* end of poster for small screen (css part) */
+
+/* filter & sort button */
+#main_div{
+    display: flex;
+    margin-top: 10px;
+    height: auto;
+    width: 95%;
+    margin-left: 20px;
+}
+.filter_btns > span{
+    padding: 12px 20px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+.filter_btns > span:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+#dark_dropdopwn_filterbtn1{
+    margin-left: 0px;
+    display: none;
+}
+#dark_dropdopwn_filterbtn2{
+    margin-left: 0px;
+}
+#myDropdown1 {
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-right: 0px;
+    width: 200px;
+    background-color: white;
+  }
+  #poster_dropdown1 > #Featured_btn1{
+    width: 200px;
+    padding: 0px 0px;
+    margin-left: 0px;
+  }
+  /* ------end of Css of filter & sorting btons -------*/
+
+  #container_AllProducts{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    padding: 15px 05px 05px 05px;
+  }
+  #container_AllProducts > div{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    row-gap: 10px;
+    column-gap: -50px;
+    padding-left: 22px;
+  }
+  #container_AllProducts > div > section > button{
+    left: 35%;
+  }
+
+}
+
+
+
+
+
+
