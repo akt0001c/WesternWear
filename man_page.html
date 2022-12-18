@@ -21,18 +21,19 @@
         <span>Great holiday presents are part of out heritage. Here's our 2022 take...</span>
         <div id="poster_dropdown" class="dropdown">
 
-            <button class="dropbtn">For Men <span><i id="dropdown_arrow" class="fa-solid fa-angle-down"></i></span></button>
+            <button id="poster_dropdown_default" class="dropbtn">For men <span><i id="dropdown_arrow" class="fa-solid fa-angle-down"></i></span></button>
 
             <section id="myDropdown" class="dropdown-content">
-                <a href="" class="poster_dropdown_content">For Her</a href="">
-                <a href="" class="poster_dropdown_content">For Boys</a href="">
-                <a href="" class="poster_dropdown_content">For Girls</a href="">
-                <a href="" class="poster_dropdown_content">For the Home</a href="">
+                <span href="" id="for_men_poster" class="poster_dropdown_content">For men</span href="">
+                <span href="" id="for_her_poster" class="poster_dropdown_content">For women</span href="">
+                <span href="" id="for_boys_poster" class="poster_dropdown_content">For boys</span href="">
+                <span href="" id="for_girls_poster" class="poster_dropdown_content">For girls</span href="">
+                
             </section>
 
             <div id="best_seller_top_rated_btn_div">
                 <button id="best_seller_btn">Best Seller</button>
-                <button id="top_rated_btn">Top Rated</button>
+                <button id="top_rated_btn">New Arrival</button>
             </div>
                 
         </div>
@@ -77,7 +78,7 @@
                 </div>
 
                 <div id="size_div">
-                    <label class="category_text_label show_label" for="">Size <span><i id="filter_downArrow3" class="fa-solid fa-angle-down"></i></span></label>
+                    <label id="size_Text_div" class="category_text_label show_label" for="">Size <span><i id="filter_downArrow3" class="fa-solid fa-angle-down"></i></span></label>
 
                     <section id="dont_show_size"  class="section_dont_show">
                         <input id="for_filter_text_label_1" class="category_label_input dont_show" type="checkbox" value="">
@@ -96,7 +97,7 @@
                 </div>
 
                 <div id="color_div">
-                    <label class="category_text_label show_label" for="">Color <span><i id="filter_downArrow4" class="fa-solid fa-angle-down"></i></span></label>
+                    <label id="color_text_div" class="category_text_label show_label" for="">Color <span><i id="filter_downArrow4" class="fa-solid fa-angle-down"></i></span></label>
 
                     <section id="dont_show_color"  class="section_dont_show">
                         <input id="for_filter_text_label_1" class="category_label_input dont_show" type="checkbox" value="">
@@ -114,7 +115,7 @@
                 </div>
 
                 <div id="pattern_div">
-                    <label class="category_text_label show_label" for="">Pattern <span><i id="filter_downArrow5" class="fa-solid fa-angle-down"></i></span></label>
+                    <label id="pattern_text_div" class="category_text_label show_label" for="">Pattern <span><i id="filter_downArrow5" class="fa-solid fa-angle-down"></i></span></label>
 
                     <section id="dont_show_pattern"  class="section_dont_show">
                         <input id="for_filter_text_label_1" class="category_label_input dont_show" type="checkbox" value="">
@@ -134,7 +135,7 @@
                 </div>
 
                 <div id="trending_div">
-                    <label class="category_text_label show_label" for="">Trending <span><i id="filter_downArrow6" class="fa-solid fa-angle-down"></i></span></label>
+                    <label id="trending_text_div" class="category_text_label show_label" for="">Trending <span><i id="filter_downArrow6" class="fa-solid fa-angle-down"></i></span></label>
 
                     <section id="dont_show_trending"  class="section_dont_show">
                         <input id="for_filter_text_label_1" class="category_label_input dont_show" type="checkbox" value="">
@@ -152,7 +153,7 @@
                 </div>
 
                 <div id="brand_div">
-                    <label class="category_text_label show_label" for="">Brand <span><i id="filter_downArrow7" class="fa-solid fa-angle-down"></i></span></label>
+                    <label id="brand_text_div" class="category_text_label show_label" for="">Brand <span><i id="filter_downArrow7" class="fa-solid fa-angle-down"></i></span></label>
 
                     <section id="dont_show_brand"  class="section_dont_show">
                         <input id="for_filter_text_label_1" class="category_label_input dont_show" type="checkbox" value="">
@@ -172,11 +173,11 @@
                 </div>
 
                 <div id="reImagined_div">
-                    <label class="category_text_label show_label" for="">Re-Imagined <span><i id="filter_downArrow8" class="fa-solid fa-angle-down"></i></span></label>
+                    <label id="reImagined_text_div" class="category_text_label show_label" for="">Re-Imagined <span><i id="filter_downArrow8" class="fa-solid fa-angle-down"></i></span></label>
 
                     <section id="dont_show_re-imagined"  class="section_dont_show">
                         <input id="for_filter_text_label_1" class="category_label_input dont_show" type="checkbox" value="">
-                        <label class="category_label_input dont_show" for="vehicle1">Sustainable</label><br>
+                        <label class="category_label_input dont_show" for="for_filter_text_label_1">Sustainable</label><br>
                         <input class="category_label_input dont_show" type="checkbox" value="">
                         <label class="category_label_input dont_show" for="vehicle1">Fair Trade</label><br>
                         <input class="category_label_input dont_show" type="checkbox" value="">
@@ -195,10 +196,10 @@
             <div id="Featured_btn1" class="filter_btns1 dropbtn"><span> Featured <i id="dark_dropdopwn_filterbtn2" class="fa-solid fa-caret-down"></i></span>
 
                 <section id="myDropdown1" class="dropdown-content">
-                    <a href="" class="poster_dropdown_content">Price: Low to High</a href="">
-                        <a href="" class="poster_dropdown_content">Price: High to Low</a href="">
-                        <a href="" class="poster_dropdown_content">Best Seller</a href="">
-                        <a href="" class="poster_dropdown_content">New Arrivals</a href="">
+                        <span id="price_LtH" class="poster_dropdown_content">Price: Low to High</span>
+                        <span id="price_HtL" class="poster_dropdown_content">Price: High to Low</span>
+                        <span id="BestSeller_btn_in_container" class="poster_dropdown_content">Best Seller</span>
+                        <span id="NewArrivals_btn_in_container" class="poster_dropdown_content">New Arrivals</span>
                 </section>
         </div>
         
@@ -209,55 +210,15 @@
     <!-- Appended container & cards here -->
     <main id="container_AllProducts">
 
-        <div>
+        <div id="container_divison">
 
-            <section class="card_individual_section">
+            <!-- <section class="card_individual_section">
                 <img src="https://www.jcrew.com/s7-img-facade/BO220_PP4572?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480" alt="">
                 <p>NEW</p>
                 <p>Made-in-the-USA snow graphic T-shirt</p>
                 <p>INR 6843</p>
                 <button>Add To Cart</button>
-            </section>
-    
-            <section class="card_individual_section">
-                <img src="https://www.jcrew.com/s7-img-facade/BO220_PP4572?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480" alt="">
-                <p>NEW</p>
-                <p>Made-in-the-USA snow graphic T-shirt</p>
-                <p>INR 6843</p>
-                <button>Add To Cart</button>
-            </section>
-    
-            <section class="card_individual_section">
-                <img src="https://www.jcrew.com/s7-img-facade/BO220_PP4572?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480" alt="">
-                <p>NEW</p>
-                <p>Made-in-the-USA snow graphic T-shirt</p>
-                <p>INR 6843</p>
-                <button>Add To Cart</button>
-            </section>
-
-            <section class="card_individual_section">
-                <img src="https://www.jcrew.com/s7-img-facade/BO220_PP4572?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480" alt="">
-                <p>NEW</p>
-                <p>Made-in-the-USA snow graphic T-shirt</p>
-                <p>INR 6843</p>
-                <button>Add To Cart</button>
-            </section>
-    
-            <section class="card_individual_section">
-                <img src="https://www.jcrew.com/s7-img-facade/BO220_PP4572?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480" alt="">
-                <p>NEW</p>
-                <p>Made-in-the-USA snow graphic T-shirt</p>
-                <p>INR 6843</p>
-                <button>Add To Cart</button>
-            </section>
-    
-            <section class="card_individual_section">
-                <img src="https://www.jcrew.com/s7-img-facade/BO220_PP4572?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480" alt="">
-                <p>NEW</p>
-                <p>Made-in-the-USA snow graphic T-shirt</p>
-                <p>INR 6843</p>
-                <button>Add To Cart</button>
-            </section>
+            </section> -->
 
         </div>
 

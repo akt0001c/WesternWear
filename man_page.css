@@ -97,7 +97,7 @@ body{
   }
   
   /* Links inside the dropdown */
-  .dropdown-content a {
+  .dropdown-content span {
     color: black;
     text-decoration: none;
     display: block;
@@ -113,7 +113,7 @@ body{
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
+  .dropdown-content span:hover {
     background-color: rgb(209, 203, 203);
     cursor: pointer;
 }
@@ -291,7 +291,7 @@ margin-top: 20px;
     margin-right: 10px;
 }
 
-/* feture button css remaining */
+/* feature button css remaining */
 .filter_btns1{
     /* border: 1px solid blue; */
     margin-top: 20px;
@@ -319,7 +319,7 @@ margin-top: 20px;
   }
   
   /* Links inside the dropdown */
-  #myDropdown1 a {
+  #myDropdown1 span {
     color: black;
     text-decoration: none;
     display: block;
@@ -334,15 +334,12 @@ margin-top: 20px;
   }
   
   /* Change color of dropdown links on hover */
-  #myDropdown1 a:hover {
+  #myDropdown1 span:hover {
     /* background-color: rgb(209, 203, 203); */
     cursor: pointer;
     color: black;
     background-color: rgb(221, 221, 221);
 }
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
 
 
   /* Appended "container" css ----------------------------------------*/

@@ -1,14 +1,15 @@
-let obj={
-    image: "https://www.jcrew.com/s7-img-facade/BJ700_WY9889?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
-    category: "Girls",
-    tag: "ONLY A FEW LEFT",
-    product_name: "Girls metallic puffer jacket with PrimaLoft",
-    cross_price: 26014,
-    price: 23522,
-    discount: 10
-    }
+// let obj={
+//     image: "https://www.jcrew.com/s7-img-facade/BJ700_WY9889?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
+//     category: "Girls",
+//     tag: "ONLY A FEW LEFT",
+//     product_name: "Girls metallic puffer jacket with PrimaLoft",
+//     cross_price: 26014,
+//     price: 23522,
+//     discount: 10
+//     }
 
-localStorage.setItem("description",JSON.stringify(obj));
+// localStorage.setItem("description",JSON.stringify(obj));
+
 
 let data = JSON.parse(localStorage.getItem("description"))||null;
 

@@ -23,7 +23,7 @@
         {
             "image":"https://www.jcrew.com/s7-img-facade/BM277_YD2560?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
             "category":"women",
-            "tag":"Top Rated",
+            "tag":"New Arival",
             "product_name":"Long-sleeve flannel pajama set in Snowy Stewart tartan",
             "cross_price":15221,
             "price":6158,
@@ -32,7 +32,7 @@
         {
             "image":"https://www.jcrew.com/s7-img-facade/BM268_NA6157?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
             "category":"women",
-            "tag":"Top Rated",
+            "tag":"New Arival",
             "product_name":"Cable-knit cardigan sweater with jewel buttons",
             "cross_price":20479,
             "price":8234,
@@ -50,7 +50,7 @@
         {
             "image":"https://www.jcrew.com/s7-img-facade/H8908_EG9620?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
             "category":"women",
-            "tag":"BEST SELLER",
+            "tag":"New Arival",
             "product_name":"Cabana oversized sunglasses",
             "cross_price":11000,
             "price":4082,
@@ -77,7 +77,7 @@
         {
             "image":"https://www.jcrew.com/s7-img-facade/BL110_RD6052?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
             "category":"women",
-            "tag":"Top Rated",
+            "tag":"New Arival",
             "product_name":"Cashmere sweater-tank",
             "cross_price":15221,
             "price":9617,
@@ -86,7 +86,7 @@
         {
             "image":"https://www.jcrew.com/s7-img-facade/BM271_YD2531?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
             "category":"women",
-            "tag":"Top Rated",
+            "tag":"New Arival",
             "product_name":"Long-sleeve cotton poplin pajama set in red stripe",
             "cross_price":16000,
             "price":15221,
@@ -95,7 +95,7 @@
         {
             "image":"https://www.jcrew.com/s7-img-facade/BM272_PT3401?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
             "category":"women",
-            "tag":"BEST SELLER",
+            "tag":"New Arival",
             "product_name":"Waffe henley pajama suit in Fair Isle",
             "cross_price":17712,
             "price":5446,
@@ -104,7 +104,7 @@
         {
             "image":"https://www.jcrew.com/s7-img-facade/BM711_NA6445?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
             "category":"women",
-            "tag":"Top Rated",
+            "tag":"New Arival",
             "product_name":"Faux-fur slippers",
             "cross_price":6850,
             "price":2699,
@@ -131,12 +131,182 @@
         {
             "image":"https://www.jcrew.com/s7-img-facade/BN336_PK6709?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
             "category":"women",
-            "tag":"Best Seller",
+            "tag":"New Arival",
             "product_name":"Crystal studded bangle bracelet",
             "cross_price":9410,
             "price":5949,
             "discount":35
         }
+     ],
+     "men": [
+        {
+            "image": "https://www.jcrew.com/s7-img-facade/BM506_SR0882?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+            "tag": "BEST SELLER",
+            "product_name": "Kids bear Fair Isle sweater in lambswool blend",
+            "category": "men",
+            "cross_price": 10968,
+            "price": 10345,
+            "discount": 6
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/G7599_GR6909?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+            "tag": "New Arival",
+            "product_name": "men' corduroy pant in stretch fit",
+            "category": "men",
+            "cross_price": 10449,
+            "price": 7588,
+            "discount": 23
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/AZ817_SU9465?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+            "tag": "BEST SELLER",
+            "product_name": "Kids' cashmere crewneck sweater",
+            "category": "men",
+            "cross_price": 17866,
+            "price": 13520,
+            "discount": 19
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/BL154_KF5119?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+            "tag": "BEST SELLER",
+            "product_name": "Kid's long-sleeve printed sleep set",
+            "category": "men",
+            "cross_price": 8099,
+            "price": 6829,
+            "discount": 13
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/AZ751_SU9465?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+            "tag": "BEST SELLER",
+            "product_name": "Kids' cashmere pullover hoodie",
+            "category": "men",
+            "cross_price": 15329,
+            "price": 14899,
+            "discount": 6
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/BL651_GR6909?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+            "tag": "New Arival",
+            "product_name": "Kid's Park_city graphic crewneck sweatshirt",
+            "category": "men",
+            "cross_price": 8599,
+            "price": 8209,
+            "discount": 4
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/AZ728_GR6909?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+            "tag": "New Arival",
+            "product_name": "Kids' long-sleeve waffle pajama set",
+            "cross_price": 9549,
+            "price": 6829,
+            "discount": 14
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/BM526_KW0049?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+            "tag": "New Arival",
+            "product_name": "Kid's chino carpenter pant",
+            "category": "men",
+            "cross_price": 8209,
+            "price": 3104,
+            "discount": 62
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/G7599_GR6786?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+            "tag": "New Arival",
+            "product_name": "men' quilted knit shirt",
+            "category": "men",
+            "cross_price": 12849,
+            "price": 10968,
+            "discount": 11
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/BM668_SR0097?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+            "tag": "New Arival",
+            "product_name": "Kids' zip-up sherpa jacket in Fair Isle",
+            "category": "men",
+            "cross_price": 20417,
+            "price": 7795,
+            "discount": 62
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/BJ322_YD0136?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
+            "tag": "New Arival",
+            "product_name": "Kid's quilted filed jacket in recycled polyester",
+            "category": "men",
+            "cross_price": 17658,
+            "price": 7243,
+            "discount": 59
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/BJ190_GR7901?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
+            "tag": "New Arival",
+            "product_name": "Kids' relaxed-fit shirt in lightweight flannel",
+            "category": "men",
+            "cross_price": 9199,
+            "price": 8209,
+            "discount": 8
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/BJ863_SR0271?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
+            "tag": "New Arival",
+            "product_name": "men' relaxed-fit pull-on corduroy sweater",
+            "category": "men",
+            "cross_price": 13520,
+            "price": 8209,
+            "discount": 39
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/BI823_GR5818?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
+            "tag": "New Arival",
+            "product_name": "men' relaxed-fit pull-on corduroy pant",
+            "category": "men",
+            "cross_price": 7588,
+            "price": 6559,
+            "discount": 8
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/AZ818_BL8006?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
+            "tag": "New Arival",
+            "product_name": "Kids' cashmere half-zip sweater",
+            "category": "men",
+            "cross_price": 16599,
+            "price": 14899,
+            "discount": 11
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/BM654_KF5314?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
+            "tag": "New Arival",
+            "product_name": "Kids' long-sleeve great times graphic T-shirt",
+            "category": "men",
+            "cross_price": 4070,
+            "price": 3724,
+            "discount": 9
+            },
+            
+            {
+            "image": "https://www.jcrew.com/s7-img-facade/AZ817_SU8803?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
+            "tag": "New Arival",
+            "product_name": "Kids' cashmere crewneck sweater",
+            "category": "men",
+            "cross_price": 15550,
+            "price": 13520,
+            "discount": 6
+            }
      ],
      "girl":[
         {
@@ -151,7 +321,7 @@
             {
             "image": "https://www.jcrew.com/s7-img-facade/BJ700_WY9889?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
             "category": "Girls",
-            "tag": "ONLY A FEW LEFT",
+            "tag": "New Arival",
             "product_name": "Girls metallic puffer jacket with PrimaLoft",
             "cross_price": 26014,
             "price": 23522,
@@ -187,7 +357,7 @@
             {
             "image": "https://www.jcrew.com/s7-img-facade/BM154_SR0892?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
             "category": "Girls",
-            "tag": "ONLY A FEW LEFT",
+            "tag": "New Arival",
             "product_name": "Girls cherry Fair Isle crewneck sweater",
             "cross_price": 0,
             "price": 13561,
@@ -205,7 +375,7 @@
             {
             "image": "https://www.jcrew.com/s7-img-facade/BI879_SU9807?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
             "category": "Girls",
-            "tag": "ONLY A FEW LEFT",
+            "tag": "New Arival",
             "product_name": "Girls sparkle puff-sleeve cardigan sweater",
             "cross_price": 8234,
             "price": 3391,
@@ -214,7 +384,7 @@
             {
             "image": "https://www.jcrew.com/s7-img-facade/BM583_YD2553?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
             "category": "Girls",
-            "tag": "ONLY A FEW LEFT",
+            "tag": "New Arival",
             "product_name": "Girls drop-waist jacquard dress",
             "cross_price": 13561,
             "price": 4082,
@@ -241,7 +411,7 @@
             {
             "image": "https://www.jcrew.com/s7-img-facade/BM613_EB7440?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
             "category": "Girls",
-            "tag": "ONLY A FEW LEFT",
+            "tag": "New Arival",
             "product_name": "Girls beaded tiara headband",
             "cross_price": 3391,
             "price": 1315,
@@ -277,7 +447,7 @@
             {
             "image": "https://www.jcrew.com/s7-img-facade/BL687_PK6148?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
             "category": "Girls",
-            "tag": "ONLY A FEW LEFT",
+            "tag": "New Arival",
             "product_name": "Girls ruffle-collar top",
             "cross_price": 8234,
             "price": 7333,
@@ -294,79 +464,9 @@
             }
         ],
         "Boy":[   
-            {
-                "image": "https://www.jcrew.com/s7-img-facade/BM506_SR0882?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
-                "tag": "BEST SELLER",
-                "category":"boys",
-                "product_name": "Kids bear Fair Isle sweater in lambswool blend",
-                "cross_price": 10968,
-                "price": 10345,
-                "discount": 6
-                },
-                
-                {
-                "image": "https://www.jcrew.com/s7-img-facade/G7599_GR6909?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
-                "tag": "BEST SELLER",
-                "category":"boys",
-                "product_name": "Boys' corduroy pant in stretch fit",
-                "cross_price": 10449,
-                "price": 7588,
-                "discount": 23
-                },
-                
-                {
-                "image": "https://www.jcrew.com/s7-img-facade/AZ817_SU9465?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
-                "tag": "BEST SELLER",
-               "category":"boys",
-                "product_name": "Kids' cashmere crewneck sweater",
-                "cross_price": 17866,
-                "price": 13520,
-                "discount": 19
-                },
-                
-                {
-                "image": "https://www.jcrew.com/s7-img-facade/BL154_KF5119?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
-                "tag": "BEST SELLER",
-               "category":"boys",
-                "product_name": "Kid's long-sleeve printed sleep set",
-                "cross_price": 8099,
-                "price": 6829,
-                "discount": 13
-                },
-                
-                {
-                "image": "https://www.jcrew.com/s7-img-facade/AZ751_SU9465?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
-                "tag": "BEST SELLER",
-               "category":"boys",
-                "product_name": "Kids' cashmere pullover hoodie",
-                "cross_price": 15329,
-                "price": 14899,
-                "discount": 6
-                },
-                
-                {
-                "image": "https://www.jcrew.com/s7-img-facade/BL651_GR6909?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
-                "tag": "BEST SELLER",
-               "category":"boys",
-                "product_name": "Kid's Park_city graphic crewneck sweatshirt",
-                "cross_price": 8599,
-                "price": 8209,
-                "discount": 4
-                },
-                
-                {
-                "image": "https://www.jcrew.com/s7-img-facade/AZ728_GR6909?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
-                "tag": "BEST SELLER",
-               "category":"boys",
-                "product_name": "Kids' long-sleeve waffle pajama set",
-                "cross_price": 9549,
-                "price": 6829,
-                "discount": 14
-                },
-                
                 {
                 "image": "https://www.jcrew.com/s7-img-facade/BM526_KW0049?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
-                "tag": "Top Rated",
+                "tag": "New Arival",
                "category":"boys",
                 "product_name": "Kid's chino carpenter pant",
                 "cross_price": 8209,
@@ -376,7 +476,7 @@
                 
                 {
                 "image": "https://www.jcrew.com/s7-img-facade/G7599_GR6786?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
-                "tag": "Top Rated",
+                "tag": "New Arival",
                "category":"boys",
                 "product_name": "Boys' quilted knit shirt",
                 "cross_price": 12849,
@@ -386,7 +486,7 @@
                 
                 {
                 "image": "https://www.jcrew.com/s7-img-facade/BM668_SR0097?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
-                "tag": "Top Rated",
+                "tag": "New Arival",
                "category":"boys",
                 "product_name": "Kids' zip-up sherpa jacket in Fair Isle",
                 "cross_price": 20417,
@@ -396,7 +496,7 @@
                 
                 {
                 "image": "https://www.jcrew.com/s7-img-facade/BJ322_YD0136?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
-                "tag": "Top Rated",
+                "tag": "New Arival",
                "category":"boys",
                 "product_name": "Kid's quilted filed jacket in recycled polyester",
                 "cross_price": 17658,
@@ -462,7 +562,77 @@
                 "cross_price": 15550,
                 "price": 13520,
                 "discount": 6
-                }
+                },
+
+                {
+                    "image": "https://www.jcrew.com/s7-img-facade/BM506_SR0882?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+                    "tag": "BEST SELLER",
+                    "category":"boys",
+                    "product_name": "Kids bear Fair Isle sweater in lambswool blend",
+                    "cross_price": 10968,
+                    "price": 10345,
+                    "discount": 6
+                    },
+                    
+                    {
+                    "image": "https://www.jcrew.com/s7-img-facade/G7599_GR6909?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+                    "tag": "BEST SELLER",
+                    "category":"boys",
+                    "product_name": "Boys' corduroy pant in stretch fit",
+                    "cross_price": 10449,
+                    "price": 7588,
+                    "discount": 23
+                    },
+                    
+                    {
+                    "image": "https://www.jcrew.com/s7-img-facade/AZ817_SU9465?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+                    "tag": "BEST SELLER",
+                   "category":"boys",
+                    "product_name": "Kids' cashmere crewneck sweater",
+                    "cross_price": 17866,
+                    "price": 13520,
+                    "discount": 19
+                    },
+                    
+                    {
+                    "image": "https://www.jcrew.com/s7-img-facade/BL154_KF5119?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+                    "tag": "BEST SELLER",
+                   "category":"boys",
+                    "product_name": "Kid's long-sleeve printed sleep set",
+                    "cross_price": 8099,
+                    "price": 6829,
+                    "discount": 13
+                    },
+                    
+                    {
+                    "image": "https://www.jcrew.com/s7-img-facade/AZ751_SU9465?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+                    "tag": "BEST SELLER",
+                   "category":"boys",
+                    "product_name": "Kids' cashmere pullover hoodie",
+                    "cross_price": 15329,
+                    "price": 14899,
+                    "discount": 6
+                    },
+                    
+                    {
+                    "image": "https://www.jcrew.com/s7-img-facade/BL651_GR6909?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+                    "tag": "BEST SELLER",
+                   "category":"boys",
+                    "product_name": "Kid's Park_city graphic crewneck sweatshirt",
+                    "cross_price": 8599,
+                    "price": 8209,
+                    "discount": 4
+                    },
+                    
+                    {
+                    "image": "https://www.jcrew.com/s7-img-facade/AZ728_GR6909?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+                    "tag": "BEST SELLER",
+                   "category":"boys",
+                    "product_name": "Kids' long-sleeve waffle pajama set",
+                    "cross_price": 9549,
+                    "price": 6829,
+                    "discount": 14
+                    }
         ],
         "users":[
 
