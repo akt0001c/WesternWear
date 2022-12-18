@@ -1,14 +1,9 @@
-// let obj={
-//     image: "https://www.jcrew.com/s7-img-facade/BJ700_WY9889?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=309&hei=309",
-//     category: "Girls",
-//     tag: "ONLY A FEW LEFT",
-//     product_name: "Girls metallic puffer jacket with PrimaLoft",
-//     cross_price: 26014,
-//     price: 23522,
-//     discount: 10
-//     }
 
-// localStorage.setItem("description",JSON.stringify(obj));
+// import {navbar,footer} from "./components/comp.js";
+// //let nav= document.querySelector("#nav");
+// let foo= document.querySelector("#footer");
+// // nav.innerHTML= navbar();
+// foo.innerHTML=footer();
 
 
 let data = JSON.parse(localStorage.getItem("description"))||null;
@@ -20,8 +15,32 @@ document.getElementById("bigimg").innerHTML=`<img src="${data.image}" alt="">`;
 document.getElementById("product_n").innerText=data.product_name;
 document.getElementById("strick").innerHTML=`<s>INR ${data.cross_price}`;
 document.getElementById("nonstrick").innerText=`INR ${data.price}(${data.discount}% Off)`
+let size;
+let double_x=document.getElementById("xx");
+double_x.onclick= ()=>{
+size='xx-small';
+}
+let single_x= document.getElementById("x");
+single_x.onclick= ()=>{
+    size='x-small';
+}
+let small_size= document.getElementById("s");
+small_size.onclick= ()=>{
+    size="Small";
+};
+let medium_size=document.getElementById("m");
+medium_size.onclick= ()=>{
+    size="Medium";
+}
+let large_size=document.getElementById("l");
+large_size.onclick= ()=>{
+    size="Large";
+};
 
-
+let large_x=document.getElementById("xl");
+large_x.onclick=()=>{
+    size="X-Large";
+}
 
 document.getElementById("xx").addEventListener("mouseover",function(){
     document.getElementById("Size").innerText="Size: XX-Small"
@@ -61,10 +80,12 @@ document.getElementById("addtobag").addEventListener("click",function(){
     product_name: data.product_name,
     cross_price: data.cross_price,
     price: data.price,
-    discount: data.discount
+    discount: data.discount,
+    pro_size:size,
     }
     arr.push(obj1);
     localStorage.setItem("cart",JSON.stringify(arr));
+    window.location.href="cart.html";
 })
 let container = document.getElementById("bigimg");
 let img = document.querySelector("#big img");

@@ -33,6 +33,11 @@ h1 {
   color: black;
   text-decoration: none;
 }
+
+#logo-img{
+  height:65px;
+  width:65px;
+}
 #mnp > div:nth-child(1) > div:nth-child(2) {
   width: 20%;
   height: 100%;

@@ -5,168 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #question{
-            text-align: center;
-            margin-top: 25px;
-            margin-bottom: 25px;
-            color: #3a3a3a;
-        }
-        #main_des{
-            width: 80%;
-            margin: auto;
-        }
-        #sub_main{
-            display: flex;
-            gap: 20px;
-            width: 100%;
-        }
-        #smallimg{
-            width: 10%;
-        }
-        #smallimg > img{
-            width: 100%;
-        }
-        #bigimg{
-            width: 60%;
-            overflow: hidden;
-        }
-        #bigimg > img{
-            width: 100%;
-        }
-        #description{
-            width: 30%;
-        }
-        #product_n+p{
-            margin-top: -15px;
-            color: gray;
-        }
-        #star{
-            display: flex;
-        }
-        #star>img{
-            margin-top: 18px;
-            height: 15px;
-        }
-        #star>p{
-            margin-left: 10px;
-            color: gray;
-        }
-        #star>p:hover{
-            cursor: pointer;
-        }
-        #INR{
-            display: flex;
-        }
-        #INR>#strick{
-          color: #685855;
-        }
-        #INR > #nonstrick{
-            margin-left: 10px;
-            color: #df4637;
-        }
-        #button_des{
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        #button_des > button{
-            height: 50px;
-            margin: auto;
-            width: 80px;
-            margin-top: 5px;
-            background-color: white;
-            border: 1px solid gray;
-            
-        }
-        #button_des > button:hover{
-          cursor: pointer;
-          border: 2px solid black;
-        }
-        #quantity{
-           margin-top: 20px;
-        }
-        #finalprice{
-            border: 2px solid black;
-            padding-left: 10px;
-        }
-        #fs{
-            color: red;
-            margin-bottom: -2px;
-        }
-        #addbutton{
-            display: flex;
-            gap: 15px;
-            margin-top: 30px;
-        }
-        #addbutton>button:hover{
-            cursor: pointer;
-        }
-        #addbutton>div>img:hover{
-            cursor: pointer;
-        }
-        #addbutton>div{
-            width: 10%;
-        }
-        #addbutton>div>img{
-            width: 100%;
-            border: 1px solid gray;
-        }
-        #addbutton>button{
-            width: 85%;
-            color: white;
-            background-color: black;
-        }
-        #ul{
-            line-height: 25px;
-        }
-        #reimagined{
-            display: flex;
-        }
-        #reimagined>img{
-            width: 40px;
-            margin-right: 10px;
-        }
-        #recycle{
-            display: flex;
-        }
-        #recycle>img{
-            width: 40px;
-            margin-right: 10px;
-        }
-        #learnmore{
-            display: flex;
-            gap: 20px;
-        }
-        #learnmore>h3{
-            text-decoration: underline;
-        }
-        #learnmore>h3:hover{
-          cursor: pointer;
-        }
-        #share{
-            display: flex;
-        }
-        #share>img{
-            height: 40px;
-            margin-left: 10px;
-        }
-        #share>img:hover{
-            cursor: pointer;
-        }
-        #share>h3{
-            margin-top: 8px;
-        }
-        #zoom{
-            overflow: hidden;
-           
-        }
-        #zoom>img{
-            zoom: 200%;
-        }
-    </style>
+    <!-- <link rel="stylesheet" href="./styles/navbar.css">  -->
+     <!-- <link rel="stylesheet" href="./styles/footer.css"> -->
+   
+    <link rel="stylesheet" href="./styles/description.css">
 </head>
 <body>
-    <div id="navbar"></div>
+    <div id="nav"></div>
     <hr>
     <p id="question">Have a question? We can help</p>
     <hr>
@@ -181,7 +26,7 @@
                 <div id="zoom"></div>
                 <div id="d_1">
                     <h3 id="product_n"></h3>
-                <p>Item BJ700</p>
+                <p id="bj700">Item BJ700</p>
                 <div id="star">
                     <img src="https://jcrew.ugc.bazaarvoice.com/1706redes-en_us/4_0/5/rating.png" alt="">
                     <p><u>2 REVIEWS</u></p>
@@ -254,7 +99,7 @@
             </div>
         </div>
     </div>
-    
+    <div id="footer"></div>
 </body>
 </html>
-<script src="description.js"></script>
+<script  src="./scripts/description.js"></script>
