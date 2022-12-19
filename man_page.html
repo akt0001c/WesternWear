@@ -51,14 +51,17 @@
                 <br><label id="category_div" class="category_text_label show_label" >Category <span class><i id="filter_downArrow1" class="fa-solid fa-angle-down"></i></span></label><br>
 
                 <section id="dont_show_category" class="section_dont_show">
-                    <input id="for_filter_text_label_1" class="category_label_input dont_show" type="checkbox" value="">
-                    <label class="category_label_input dont_show" for="vehicle1">Sweaters</label><br>
-                    <input class="category_label_input dont_show" type="checkbox" value="">
-                    <label class="category_label_input dont_show" for="vehicle1">Pants</label><br>
-                    <input class="category_label_input dont_show" type="checkbox" value="">
-                    <label class="category_label_input dont_show" for="vehicle1">Denim</label><br>
-                    <input class="category_label_input dont_show" type="checkbox" value="Shirts">
-                    <label class="category_label_input dont_show" for="vehicle1">Shirts</label><br>
+                    <input id="for_filter_text_label_1" class="category_label_input dont_show" type="checkbox" value="sweater">
+                    <label class="category_label_input dont_show" for="for_filter_text_label_1">sweater</label><br>
+
+                    <input id="category_pants" class="category_label_input dont_show" type="checkbox" value="pant">
+                    <label class="category_label_input dont_show" for="category_pants">pant</label><br>
+
+                    <input id="category_denim" class="category_label_input dont_show" type="checkbox" value="denim">
+                    <label class="category_label_input dont_show" for="category_denim">denim</label><br>
+
+                    <input id="category_shirts" class="category_label_input dont_show" type="checkbox" value="shirts">
+                    <label class="category_label_input dont_show" for="category_shirts">shirt</label><br>
                 </section>
                 
 
@@ -66,12 +69,14 @@
                     <label id="discount_div" class="category_text_label show_label" for="">Discount <span><i id="filter_downArrow2" class="fa-solid fa-angle-down"></i></span></label>
 
                     <section id="dont_show_discount"  class="section_dont_show">
-                        <input id="for_filter_text_label_1" class="category_label_input dont_show" type="checkbox" value="">
-                        <label class="category_label_input dont_show" for="vehicle1">10% - 30% off</label><br>
-                        <input class="category_label_input dont_show" type="checkbox" value="">
-                        <label class="category_label_input dont_show" for="vehicle1">30% - 50% off</label><br>
-                        <input class="category_label_input dont_show" type="checkbox" value="">
-                        <label class="category_label_input dont_show" for="vehicle1">More Than 50% off</label><br>
+                        <input id="discount_10to30" class="category_label_input dont_show" type="checkbox" value="?discount_gte=10&discount_lte=30">
+                        <label class="category_label_input dont_show" for="discount_10to30">10% - 30% off</label><br>
+
+                        <input id="discount_30to50" class="category_label_input dont_show" type="checkbox" value="?discount_gte=30&discount_lte=50">
+                        <label class="category_label_input dont_show" for="discount_30to50">30% - 50% off</label><br>
+
+                        <input id="discount_50above" class="category_label_input dont_show" type="checkbox" value="?discount_gte=51">
+                        <label class="category_label_input dont_show" for="discount_50above">More Than 50% off</label><br>
                     </section>
                     
 
