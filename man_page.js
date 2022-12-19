@@ -238,12 +238,12 @@ men_dropdown.onclick = async ()=>{
 
 // dropdown WOMEN SECTION
 women_dropdown.onclick = async ()=>{
-    console.log("insde womenr")
+    //console.log("insde womenr")
     poster_dropdown.innerHTML = `For women <span><i id="dropdown_arrow" class="fa-solid fa-angle-down"></i></span>`;
 
     let res = await fetch(`${baseURL}/women`);
     let data = await res.json();
-    console.log(data)
+    //console.log(data)
     appendData(data)
 }
 
@@ -272,7 +272,7 @@ let container = document.getElementById("container_divison");
     function appendData(data){
         
         container.innerHTML = "";
-        console.log(data)
+        //console.log(data)
         data.forEach(function(el,index) {
 
             let section = document.createElement("section");
