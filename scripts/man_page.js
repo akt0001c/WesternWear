@@ -1,6 +1,11 @@
 const baseURL1 = localStorage.getItem("baseURL");
 const baseURL = "http://localhost:3000";
 
+const baseURL_men = "http://localhost:3000/men";
+const baseURL_women = "http://localhost:3000/women";
+const baseURL_boys = "http://localhost:3000/Boy";
+const baseURL_girls = "http://localhost:3000/girl";
+
 window.onload = async ()=> {
     let res = await fetch(baseURL1);
     let data = await res.json();
@@ -16,7 +21,7 @@ dropdown_btn.addEventListener("click", ()=> {
 });
 
 function dropdown_content (){
-    console.log("insode the div")
+    //console.log("insode the div")
     let options = document.querySelector(".dropdown-content");
 
     if(options.style.display == "block"){
@@ -233,12 +238,12 @@ men_dropdown.onclick = async ()=>{
 
 // dropdown WOMEN SECTION
 women_dropdown.onclick = async ()=>{
-    console.log("insde womenr")
+    //console.log("insde womenr")
     poster_dropdown.innerHTML = `For women <span><i id="dropdown_arrow" class="fa-solid fa-angle-down"></i></span>`;
 
     let res = await fetch(`${baseURL}/women`);
     let data = await res.json();
-    console.log(data)
+    //console.log(data)
     appendData(data)
 }
 
@@ -267,7 +272,7 @@ let container = document.getElementById("container_divison");
     function appendData(data){
         
         container.innerHTML = "";
-        console.log(data)
+        //console.log(data)
         data.forEach(function(el,index) {
 
             let section = document.createElement("section");
@@ -593,21 +598,56 @@ price_HtL.onclick = async ()=> {
 
 // Done with all the buttons now only filter section is remaining
 
-// filter section with Category & discounts
+// filter section with Category & discounts only
 
-// let checkbox = document.querySelectorAll(".dont_show");
+let category_label_input = document.querySelectorAll(".category_label_input");
 
-// for(box of checkbox){
-//     let box_text = box.innerText
-//     //console.log(box_text)
-//     box.onchange = ()=>{
-//         checkBox_func(box_text)
-//     }
-// }
+for(let filters of category_label_input){
+    filters.onchange = (event)=> {
+        if(filters.checked){
+            let item_id_filter = event.target.id;
+            //console.log(item_id_filter)
+            filters_function(item_id_filter);
+        }
+    }
+}
 
-// function checkBox_func(text){
-//     console.log(text)
-// }
+// filters_function
+
+function filters_function(item_id){
+    console.log(`${item_id}`)
+    let item_text = document.getElementById(`${item_id}`).value;
+    console.log(item_text)
+    let gender_catch = document.getElementById("poster_dropdown_default").innerText
+    console.log(gender_catch);
+
+    if(gender_catch.includes("girls")){
+        req_filter_function(item_text,baseURL_girls);
+    } else if(gender_catch.includes("women")){
+        req_filter_function(item_text,baseURL_women);
+    } else if(gender_catch.includes("men")){
+        req_filter_function(item_text,baseURL_men);
+    } else if(gender_catch.includes("boys")){
+        req_filter_function(item_text,baseURL_boys);
+    } 
+}
+
+async function req_filter_function(checked_filter,url){
+    console.log(checked_filter)
+    if(checked_filter == "denim" || checked_filter == "pant" || checked_filter == "sweater" || checked_filter == "shirt"){
+        let res = await fetch(`${url}?filter=${checked_filter}`);
+        let data = await res.json();
+        console.log(data);
+        appendData(data);
+    } 
+    else if(checked_filter == "?discount_gte=10&discount_lte=30" || checked_filter == "?discount_gte=30&discount_lte=50" ||checked_filter == "?discount_gte=51"){
+        
+        let res = await fetch(`${url}${checked_filter}`);
+        let data = await res.json();
+        console.log(data);
+        appendData(data);
+    }
+}
 
 
 
