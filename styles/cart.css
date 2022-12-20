@@ -21,3 +21,8 @@
     width:100%;
     height:98%;
 }
+.dis-price{
+    text-decoration: line-through;
+    
+    color:red;
+}

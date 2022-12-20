@@ -1,4 +1,4 @@
-const baseURL1 = JSON.parse(localStorage.getItem("baseURL"));
+const baseURL1 = localStorage.getItem("baseURL");
 const baseURL = "http://localhost:3000";
 
 window.onload = async ()=> {

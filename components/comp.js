@@ -10,7 +10,7 @@ const  navbar= ()=>{
     </div>
     <div id="snp">
       <div  class="navbar">
-        <a href="index.html"> <img src="western_wear_logo.png" alt="" id="logo-img"></a>
+        <a href="index.html"> <img src="logo.png.png" alt="" id="logo-img"></a>
         <div class="dropdown">
           <button class="dropbtn">Gifts
             <i class="fa fa-caret-down"></i>

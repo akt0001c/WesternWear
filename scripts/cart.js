@@ -1,3 +1,9 @@
+import {navbar,footer} from "../components/comp.js";
+let nav= document.querySelector("#nav");
+let foo= document.querySelector("#footer");
+//nav.innerHTML= navbar();
+foo.innerHTML=footer();
+
 let productbox= document.querySelector("#product-cart-detail");
 let savedproduct= document.querySelector("#saved-product-box");
 let promocodeflag= true;

@@ -1,3 +1,6 @@
+body{
+    background-color: whitesmoke;
+}
 #c-nav{
     width: 100%;
     border: 1px solid brown;
@@ -30,6 +33,7 @@ height: 90%;
     display: flex;
     /* border: 1px solid; */
     margin-top: 20px;
+    background-color: white;
 }
 #checkout>div{
 height: 700px;
